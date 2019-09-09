@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 110px;
+
+
+}
+
+.grid-container>.section-login {
+    background-color: #fff;
+    border-top: 4px solid #4DABF5;
+    text-align: center;
+    font-size: 30px;
+    width: 425px;
+    height: 510px;
+}
+
+.section-login img {
+    margin-top: 82px;
+    width: 190px;
+    height: 32px;
+}
+
+.login-input {
+    display: grid;
+    width: 345px;
+    margin: auto;
+    margin-top: 62px;
+}
+
+label {
+    font-size: 12px;
+    float: left;
+    color: #707070;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+input.section-input[type=text] {
+    width: 345px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 16px;
+    color: #707070;
+    opacity: 0.5;
+}
+
+input.section-input[type=password] {
+    width: 345px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 16px;
+    color: #707070;
+    opacity: 0.5;
+}
+
+
+
+
+.input-title {
+    clear: both;
+    font-size: 12px;
+    color: #707070;
+    opacity: 0.5;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+
+.checkbox-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    clear: both;
+}
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border-radius: 2px;
+    transition: all 0.3s ease-out;
+    border: 1px solid #707070;
+    opacity: 0.5;
+}
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 1px solid #707070;
+}
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 2px;
+    border: solid #4DABF5;
+    border-width: 0 3px 3px 0;
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+}
+.checkbox-label input:checked ~ .checkbox-custom::after {
+    -webkit-transform: rotate(45deg) scale(1);
+    -ms-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
+    opacity:1;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border: solid #4DABF5;
+    border-width: 0 2px 2px 0;
+    background-color: transparent;
+  }
+  .checkbox-label .checkbox-custom::before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 2px;
+    border: 2px solid #FFFFFF;
+    transform: scale(0);    
+}
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: -3px;
+    top: -3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+}
+button.button-login {
+    background-color: #4DABF5;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 16px;
+  }
