@@ -55,9 +55,15 @@ input.section-input[type=text] {
     font-size: 14px;
     background-color: white;
     padding: 10px 16px;
-    color: #707070;
-    opacity: 0.5;
+    color: #000;
+   
 }
+input.section-input::placeholder {
+    opacity: 0.5;
+    color: #707070;
+   
+}
+
 
 input.section-input[type=password] {
     width: 345px;
@@ -65,8 +71,8 @@ input.section-input[type=password] {
     font-size: 14px;
     background-color: white;
     padding: 10px 16px;
-    color: #707070;
-    opacity: 0.5;
+    color: #000;
+   
 }
 
 
@@ -238,6 +244,7 @@ a button.button-login{
     grid-template-columns: 226px auto;
 
 }
+
 
 button.menu-detail {
     display: flex;
