@@ -374,3 +374,73 @@ tr:nth-child(even) {
     float: right;
     margin-right: 54px;
 }
+<<<<<<< HEAD
+=======
+=======
+.menu-detail.active {
+    font-weight: bold;
+    border-left: 4px solid #4DABF5;
+    background-color: #70707011;
+}
+.menu-detail:hover {
+    font-weight: bold;
+    border-left: 4px solid #4DABF5;
+    background-color: #70707011;
+}
+
+p.text-menu {
+    padding-left: 8px;
+}
+
+img.icon-menu {
+    width: 16px;
+    height: 16px;
+}
+
+.blog-statistcs {
+    width: 962px;
+    height: 502px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-left: 50px;
+    
+  
+}
+.topic-statistcs{
+display: grid;
+grid-template-columns: repeat(2,auto);
+}
+
+
+p.topic-blog-statistcs {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B3E40;
+    opacity: 0.75;
+    padding-top: 34px;
+    padding-left: 25px;
+    height: 60px;
+
+}
+.custom-select{
+    height: 60px;
+}
+
+select {
+    width: 110px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid #707070;
+    opacity: 0.85;
+    font-size: 14px;
+    float: right;
+    margin-right: 8px;
+}
+
+.custom-select {
+    padding-right: 35px;
+    margin-top: 34px;
+}
+>>>>>>> master
+>>>>>>> master
