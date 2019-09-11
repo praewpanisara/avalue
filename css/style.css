@@ -189,6 +189,72 @@ button.button-login {
     margin-top: 16px;
 }
 
+<<<<<<< HEAD
+ul {
+    list-style-type: none;
+    width: 100%;
+    height: 56px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #707070;
+    text-decoration: none;
+}
+
+.logo-head {
+    margin-top: 20px;
+    margin-left: 22px;
+}
+
+.title-head {
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.logout-head {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.logout {
+    margin-top: 20px;
+    margin-right: 23px;
+}
+
+.box-menu {
+    float: left;
+    width: 226px;
+    border: 0.75px solid #7070702a;
+    height: 665px;
+}
+
+.menu {
+    font-size: 10px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 41px;
+    margin-left: 24px;
+    text-decoration: none;
+}
+
+.icon-statistics {
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.statistics {
+    margin-left: 12px;
+}
+
+a {
+=======
 a button.button-login {
     color: white;
     text-decoration: none;
@@ -257,10 +323,142 @@ a button.button-login {
     border: 0px;
     background-color: #F5F5F5;
     border-left: 4px solid #F5F5F5;
+>>>>>>> master
     text-decoration: none;
     color: #707070;
 }
 
+<<<<<<< HEAD
+.icon-employee {
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+.employee {
+    margin-left: 12px;
+}
+
+.icon-salary {
+    margin-left: 24px;
+    margin-top: 20px;
+}
+
+.salary {
+    margin-left: 12px;
+}
+
+.statistics:hover {
+    font-weight: bold;
+    background-color: #70707052;
+}
+
+.employee:hover {
+    color: #4DABF5;
+    font-weight: bold;
+}
+
+.salary:hover {
+    color: #4DABF5;
+    font-weight: bold;
+}
+
+.bg-employee {
+    width: 100%;
+    height: 605px;
+    background-color: #EEEEEE;
+}
+
+.box-head {
+    margin-left: 300px;
+    margin-top: 29px;
+    width: 962px;
+    border: 0.75px solid #FFFFFF;
+    height: 84px;
+    background-color: #FFFFFF;
+}
+
+input[type=text] {
+    font-size: 17px;
+    border: 1.1px solid #70707083;
+    padding: 0 17px;
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    background: #FFFFFF;
+    margin-top: 21px;
+    margin-left: 33px;
+}
+
+.icon-search {
+    margin-left: -40px;
+}
+
+.btn-head {
+    background-color: #4DABF5;
+    color: white;
+    width: 120px;
+    height: 18px;
+    padding: 15px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    margin-left: 450px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+.btn-head:hover {
+    background-color: rgb(97, 180, 243);
+}
+
+.icon-add {
+    margin-left: -145px;
+}
+.iconadd {
+    margin-top: 5px;
+}
+.box-headtable {
+    margin-left: 300px;
+    margin-top: 26px;
+    width: 961px;
+    border: 0.75px solid #FFFFFF;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+.title-list {
+    font-size: 20px;
+    color: #707070;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-left: 16px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 962px;
+    background-color: #FFFFFF;
+    margin-left: 46px;
+    color: #707070;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.box-table {
+    margin-left: 255px;
+}
+.icon {
+    float: right;
+    margin-right: 54px;
+}
+=======
 .menu-detail.active {
     font-weight: bold;
     border-left: 4px solid #4DABF5;
@@ -326,3 +524,4 @@ select {
     padding-right: 35px;
     margin-top: 34px;
 }
+>>>>>>> master
