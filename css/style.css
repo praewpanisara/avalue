@@ -56,12 +56,13 @@ input.section-input[type=text] {
     background-color: white;
     padding: 10px 16px;
     color: #000;
-   
+
 }
+
 input.section-input::placeholder {
     opacity: 0.5;
     color: #707070;
-   
+
 }
 
 
@@ -72,7 +73,7 @@ input.section-input[type=password] {
     background-color: white;
     padding: 10px 16px;
     color: #000;
-   
+
 }
 
 
@@ -187,11 +188,13 @@ button.button-login {
     cursor: pointer;
     margin-top: 16px;
 }
-a button.button-login{
+
+a button.button-login {
     color: white;
     text-decoration: none;
     width: 100%;
 }
+
 .header {
     width: 100%;
     height: 56px;
@@ -242,17 +245,31 @@ a button.button-login{
     display: grid;
     font-size: 12px;
     grid-template-columns: 226px auto;
+    border-left: 4px;
 
 }
 
-
-button.menu-detail {
+.menu-detail {
     display: flex;
-    justify-items: center;
+    align-items: center;
     padding-left: 24px;
     height: 40px;
     border: 0px;
     background-color: #F5F5F5;
+    border-left: 4px solid #F5F5F5;
+    text-decoration: none;
+    color: #707070;
+}
+
+.menu-detail.active {
+    font-weight: bold;
+    border-left: 4px solid #4DABF5;
+    background-color: #70707011;
+}
+.menu-detail:hover {
+    font-weight: bold;
+    border-left: 4px solid #4DABF5;
+    background-color: #70707011;
 }
 
 p.text-menu {
@@ -262,12 +279,6 @@ p.text-menu {
 img.icon-menu {
     width: 16px;
     height: 16px;
-}
-
-.active,
-button.menu-detail:hover {
-    font-weight: bold;
-    color: #4DABF5;
 }
 
 .blog-statistcs {
