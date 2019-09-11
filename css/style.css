@@ -286,11 +286,15 @@ img.icon-menu {
     height: 502px;
     background-color: #FFFFFF;
     margin: auto;
-    display: grid;
     margin-left: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    
+  
 }
+.topic-statistcs{
+display: grid;
+grid-template-columns: repeat(2,auto);
+}
+
 
 p.topic-blog-statistcs {
     font-size: 18px;
@@ -299,7 +303,11 @@ p.topic-blog-statistcs {
     opacity: 0.75;
     padding-top: 34px;
     padding-left: 25px;
+    height: 60px;
 
+}
+.custom-select{
+    height: 60px;
 }
 
 select {
