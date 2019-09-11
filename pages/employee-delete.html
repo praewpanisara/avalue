@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///C:/Users/User/OneDrive/เอกสาร/avalue/css/style-deleteemployee.css">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="header">
+        <img src="../images/1.svg">
+        <div class="statistics">Employee Management</div>
+        <a class="icon-logout" href="#"><img src="../images/Group 82.png" class="logout"></a>
+
+    </div>
+    <div class="menu">
+        <div class="topic-menu">MENU</div>
+        <div class="section-menu">
+            <div>
+
+                <a href="" class="menu-detail">
+                    <img src="../images/iconmenu/Path 189.svg" class="icon-menu">
+                    <p class="text-menu">Statistics</p>
+                </a>
+                <a href="" class="menu-detail active">
+                    <img src="../images/iconmenu/Path 170.svg" class="icon-menu">
+                    <p class="text-menu">Employee </p>
+                </a>
+                <a href="" class="menu-detail">
+
+                    <img src="../images/iconmenu/Path 167.svg" class="icon-menu">
+                    <p class="text-menu">Salary </p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-employee">
+        <div class="box-head">
+            <input type="text" placeholder="Search" name="search2">
+            <img class="icon-search" src="../images/6.svg">
+            <a href="#" class="btn-head">
+                <img class="icon-add" src="../images/7.svg">
+                <p class="add">Add Employee</p>
+            </a>
+        </div>
+        <div class="box-headtable">
+            <div class="title-list">List of employees</div>
+        </div>
+        <div class="box-table">
+            <table>
+                <tr>
+                    <th>Name - surname</th>
+                    <th>Position</th>
+                    <th>Salary(฿)</th>
+                </tr>
+                <tr>
+                    <td><img class="icon-pp" src="../images/12.png"></td>
+                    <td></td>
+                    <td>$0</td>
+                    <td><a href="#">
+                            <div class="icon"><img class="icon-repair" src="../images/8.svg">
+                                <!-- Button to Open the Modal --><img class="icon-delete" data-toggle="modal"
+                                    data-target="#myModal" src="../images/9.svg"></div>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><img class="icon-pp" src="../images/12.png"></td>
+                    <td></td>
+                    <td>$0</td>
+                    <td><a href="#">
+                            <div class="icon"><img class="icon-repair" src="../images/8.svg">
+                                <!-- Button to Open the Modal --> <img class="icon-delete" data-toggle="modal"
+                                    data-target="#myModal" src="../images/9.svg"></div>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><img class="icon-pp" src="../images/12.png"></td>
+                    <td></td>
+                    <td>$0</td>
+                    <td><a href="#">
+                            <div class="icon"><img class="icon-repair" src="../images/8.svg">
+                                <!-- Button to Open the Modal --> <img class="icon-delete" data-toggle="modal"
+                                    data-target="#myModal" src="../images/9.svg"></div>
+                        </a></td>
+                </tr>
+                <tr>
+                    <td><img class="icon-pp" src="../images/12.png"></td>
+                    <td></td>
+                    <td>$0</td>
+                    <td><a href="#">
+                            <div class="icon"><img class="icon-repair" src="../images/8.svg">
+                                <!-- Button to Open the Modal --> <img class="icon-delete" data-toggle="modal"
+                                    data-target="#myModal" src="../images/9.svg"></div>
+                        </a></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
