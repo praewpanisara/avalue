@@ -248,51 +248,67 @@ a button.button-login {
 .icon-menu {
     background-image: url(../images/iconmenu/statistics.svg);
     height: 40px;
+    width: 226px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 24px 15px;
+
+}
+
+.icon-menu1 {
+    background-image: url(../images/iconmenu/employee.svg);
+    height: 40px;
+    width: 226px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 24px 15px;
+
+}
+
+.icon-menu1:hover {
+
+    background-image: url(../images/iconmenu/Path\ 170.svg);
+}
+.icon-menu2 {
+    background-image: url(../images/iconmenu/salary.svg);
+    height: 40px;
+    width: 226px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 24px 15px;
+
+}
+
+.icon-menu2:hover {
+
+    background-image: url(../images/iconmenu/Path\ 167.svg);
+}
+
+.menu-detail {
+    display: flex;
+    align-items: center;
+    height: 40px;
     border: 0px;
     background-color: #F5F5F5;
-    border-left: 4px solid #F5F5F5;
     text-decoration: none;
-    color: #707070;
+    color: #3B3E40;
+
 }
 
-
-.icon-employee {
-    margin-left: 24px;
-    margin-top: 20px;
-}
-
-.employee {
-    margin-left: 12px;
-}
-
-.icon-salary {
-    margin-left: 24px;
-    margin-top: 20px;
-}
-
-.salary {
-    margin-left: 12px;
-}
-
-.statistics:hover {
+.menu-detail.active {
     font-weight: bold;
-    background-color: #70707052;
-}
-
-.employee:hover {
     color: #4DABF5;
-    font-weight: bold;
+
 }
 
-.salary:hover {
+.menu-detail:hover {
+    font-weight: bold;
     color: #4DABF5;
-    font-weight: bold;
 }
-
-.bg-employee {
-    width: 100%;
-    height: 605px;
-    background-color: #EEEEEE;
+p.text-menu {
+    padding-left: 48px;
+    padding-top: 13px;
+    
 }
 
 .box-head {
@@ -304,7 +320,7 @@ a button.button-login {
     background-color: #FFFFFF;
 }
 
-input[type=text] {
+input.search[type=text] {
     font-size: 17px;
     border: 1.1px solid #70707083;
     padding: 0 17px;
@@ -362,25 +378,9 @@ tr:nth-child(even) {
     margin-right: 54px;
 }
 
-.menu-detail.active {
-    font-weight: bold;
-    border-left: 4px solid #4DABF5;
-    background-color: #70707011;
-}
-.menu-detail:hover {
-    font-weight: bold;
-    border-left: 4px solid #4DABF5;
-    background-color: #70707011;
-}
 
-p.text-menu {
-    padding-left: 8px;
-}
 
-img.icon-menu {
-    width: 16px;
-    height: 16px;
-}
+
 
 .blog-statistcs {
     width: 962px;
