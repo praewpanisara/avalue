@@ -251,12 +251,11 @@ a button.button-login {
     border: 0px;
     background-color: #F5F5F5;
     border-left: 4px solid #F5F5F5;
->>>>>>> master
     text-decoration: none;
     color: #707070;
 }
 
-<<<<<<< HEAD
+
 .icon-employee {
     margin-left: 24px;
     margin-top: 20px;
@@ -336,8 +335,9 @@ input[type=text] {
     color: #707070;
     font-weight: bold;
     color: #4DABF5;
+}
 
-table {
+table{
     border-collapse: collapse;
     width: 962px;
     background-color: #FFFFFF;
@@ -361,7 +361,7 @@ tr:nth-child(even) {
     float: right;
     margin-right: 54px;
 }
-=======
+
 .menu-detail.active {
     font-weight: bold;
     border-left: 4px solid #4DABF5;
@@ -427,4 +427,4 @@ select {
     padding-right: 35px;
     margin-top: 34px;
 }
->>>>>>> master
+
