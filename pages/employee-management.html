@@ -11,33 +11,40 @@
 </head>
 
 <body>
-    <ul>
-        <li><img class="logo-head" src="../images/1.svg"></li>
-        <li class="title-head">
-            <p>Employee Management</p>
-        </li>
-        <li class="logout" style="float:right"><a href="#logout">Logout</a></li>
-        <li style="float:right"><a class="logout-head" href="#"><img src="../images/2.png"></li>
-    </ul>
-    <div class="box-menu">
-        <div class="menu">
-            MENU
-        </div>
-        <div class="menu-statistics">
-           <a href="#"> <img class="icon-statistics" src="../images/3.svg"></a><a class="statistics" href="#">Statistics</a>
-        </div>
-        <div class="menu-employee">
-                <a href="#"> <img class="icon-employee" src="../images/4.svg"></a><a class="employee" href="#">Employee</a>
-        </div>
-        <div class="menu-salary">
-                <a href="#"> <img class="icon-salary" src="../images/5.svg"></a><a class="salary" href="#">Salary</a>
+    <div class="header">
+        <img src="../images/1.svg">
+        <div class="statistics">Employee Management</div>
+        <a class="icon-logout" href="#"><img src="../images/Group 82.png" class="logout"></a>
+
+    </div>
+    <div class="menu">
+        <div class="topic-menu">MENU</div>
+        <div class="section-menu">
+            <div>
+
+                <a href="" class="menu-detail"> 
+                        <img src="../images/iconmenu/Path 189.svg" class="icon-menu">
+                        <p class="text-menu">Statistics</p>
+                </a>
+                <a href="" class="menu-detail active">
+                        <img src="../images/iconmenu/Path 170.svg" class="icon-menu">
+                        <p class="text-menu">Employee </p>
+                    </a>
+                <a href="" class="menu-detail">
+                    
+                        <img src="../images/iconmenu/Path 167.svg" class="icon-menu">
+                        <p class="text-menu">Salary </p>
+                </a>
+            </div>
         </div>
     </div>
     <div class="bg-employee">
         <div class="box-head">
-                    <input type="text" placeholder="Search" name="search2">
+                    <input class="search" type="text" placeholder="Search" name="search2">
                   <img class="icon-search" src="../images/6.svg">
-                  <a href="#" class="btn-head">Add Employee</a><img class="icon-add" src="../images/7.svg">
+                  <a href="#" class="btn-head">
+                      <img class="icon-add" src="../images/7.svg">
+                      <p class="add">Add Employee</p></a>
         </div>
         <div class="box-headtable"><div class="title-list">List of employees</div></div>
         <div class="box-table">
