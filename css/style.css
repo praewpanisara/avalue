@@ -15,8 +15,6 @@ body {
     margin: auto;
     margin-top: 110px;
     margin-bottom: 110px;
-
-
 }
 
 .grid-container>.section-login {
@@ -233,7 +231,7 @@ a button.button-login {
     display: grid;
     grid-template-columns: 226px auto;
 }
-.topic-menu>p {
+.topic-menu {
     font-size: 10px;
     font-weight: bold;
     padding-top: 35px;
@@ -244,32 +242,33 @@ a button.button-login {
 .section-menu {
     font-size: 12px;
     border-left: 4px;
+    margin-left: 24px;
+}
+
+.icon-menu4 {
+    background-image: url(../images/iconmenu/Path170.svg);
+    height: 40px;
+    width: 226px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 24px 15px;
 
 }
 
-.icon-menu {
+.icon-menu3 {
+    background-image: url(../images/iconmenu/icon-1.svg);
+    height: 40px;
+    width: 226px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 24px 15px;
+  
+
+}
+
+.icon-menu3:hover {
+
     background-image: url(../images/iconmenu/statistics.svg);
-    height: 40px;
-    width: 226px;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: 24px 15px;
-
-}
-
-.icon-menu1 {
-    background-image: url(../images/iconmenu/employee.svg);
-    height: 40px;
-    width: 226px;
-    border: none;
-    background-repeat: no-repeat;
-    background-position: 24px 15px;
-
-}
-
-.icon-menu1:hover {
-
-    background-image: url(../images/iconmenu/Path\ 170.svg);
 }
 .icon-menu2 {
     background-image: url(../images/iconmenu/salary.svg);
@@ -283,7 +282,7 @@ a button.button-login {
 
 .icon-menu2:hover {
 
-    background-image: url(../images/iconmenu/Path\ 167.svg);
+    background-image: url(../images/iconmenu/Path167.svg);
 }
 
 .menu-detail {
@@ -294,55 +293,75 @@ a button.button-login {
     background-color: #F5F5F5;
     text-decoration: none;
     color: #3B3E40;
-
 }
+
 
 .menu-detail.active {
     font-weight: bold;
     color: #4DABF5;
-
 }
 
 .menu-detail:hover {
     font-weight: bold;
     color: #4DABF5;
 }
-p.text-menu {
+
+.text-menu {
     padding-left: 48px;
     padding-top: 13px;
-    
 }
 
 .box-head {
+    float: left;
     margin-left: 300px;
-    margin-top: 29px;
+    margin-top: -632px;
     width: 962px;
     border: 0.75px solid #FFFFFF;
     height: 84px;
     background-color: #FFFFFF;
 }
-
 input.search[type=text] {
-    font-size: 17px;
+    font-size: 14px;
     border: 1.1px solid #70707083;
     padding: 0 17px;
     width: 250px;
     height: 40px;
-    border: 0px;
-    background-color: #F5F5F5;
+    text-align: left;
+    background: #FFFFFF;
+    margin-top: 21px;
+    margin-left: 33px;
+}
+.icon-search {
+    margin-left: -40px;
+    margin-top: 4px;
+}
+.btn-head {
+    background-color: #4DABF5;
+    color: white;
+    width: 120px;
+    height: 18px;
+    padding: 15px 19px;
+    text-align: center;
     text-decoration: none;
-
+    display: inline-block;
+    border-radius: 6px;
+    margin-left: 450px;
+    margin-top: 2px;
+    font-size: 12px;
 }
-
+.btn-head:hover {
+    background-color: rgb(97, 180, 243);
+}
 .icon-add {
-    margin-left: -145px;
+    float: left;
+    width: 18px;
+    height: 18px;
 }
-.iconadd {
-    margin-top: 5px;
-}
+
 .box-headtable {
+    float: left;
     margin-left: 300px;
-    margin-top: 26px;
+    margin-top: -516px;
     width: 961px;
     border: 0.75px solid #FFFFFF;
     height: 80px;
@@ -352,10 +371,12 @@ input.search[type=text] {
     font-size: 20px;
     color: #707070;
     font-weight: bold;
-    color: #4DABF5;
+    margin-top: 22px;
+    margin-left: 16px;
 }
-
-table{
+table.table-employee {
+    float: left;
+    margin-top: -445px;
     border-collapse: collapse;
     width: 962px;
     background-color: #FFFFFF;
@@ -363,8 +384,7 @@ table{
     color: #707070;
 }
 
-th,
-td {
+th,td {
     text-align: left;
     padding: 20px;
 }
@@ -374,10 +394,6 @@ tr:nth-child(even) {
 }
 .box-table {
     margin-left: 255px;
-}
-.icon {
-    float: right;
-    margin-right: 54px;
 }
 
 
