@@ -229,7 +229,7 @@ a button.button-login {
     background-color: #F5F5F5;
 }
 
-.box-mune{
+.box-menu{
     display: grid;
     grid-template-columns: 226px auto;
 }
@@ -246,6 +246,7 @@ a button.button-login {
     border-left: 4px;
 
 }
+
 .icon-menu {
     background-image: url(../images/iconmenu/statistics.svg);
     height: 40px;
@@ -380,25 +381,20 @@ tr:nth-child(even) {
 }
 
 
-
-
-
-.blog-statistcs {
+.blog-statistics {
     width: 962px;
     height: 502px;
     background-color: #FFFFFF;
     margin: auto;
     margin-left: 50px;
-    
-  
 }
-.topic-statistcs{
+.topic-statistics{
 display: grid;
 grid-template-columns: repeat(2,auto);
 }
 
 
-p.topic-blog-statistcs {
+p.topic-blog-statistics {
     font-size: 18px;
     font-weight: bold;
     color: #3B3E40;
@@ -407,9 +403,6 @@ p.topic-blog-statistcs {
     padding-left: 25px;
     height: 60px;
 
-}
-.custom-select{
-    height: 60px;
 }
 
 select {
@@ -426,7 +419,8 @@ select {
 
 .custom-select {
     padding-right: 35px;
-    margin-top: 34px;
+    padding-top: 38px;
+
 }
 
 .add-employee{
@@ -451,4 +445,15 @@ button.submit{
     margin-top: 8px;
     margin-right: 22px;
     margin-left: 100px;
+}
+.secction-addemployee{
+    display: grid;
+    width: 1165;
+    margin: auto;
+    grid-gap: 68px;
+    grid-template-columns: 776px 320px;
+    margin-top: 48px;
+}
+.detail-employee{
+    background-color: #fff;
 }
