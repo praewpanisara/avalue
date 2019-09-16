@@ -1,29 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="file:///C:/Users/User/Documents/avalue/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Add Employee</title>
 </head>
+
 <body>
     <div class="header">
         <img src="../images/close-line.svg" class="out">
         <div class="add-employee">Add Employee</div>
         <button class="submit">Submit</button>
     </div>
-    <div class="secction-addemployee">
+    <div class="section-addemployee">
         <div class="detail-employee">
-            <div class="input-name">
-                <label>Username :</label>
-                <input class="section-input" type="text" placeholder="Username">
+            <div class="detail-input-employee">
+                <p class="topic-employee">Personal Information </p>
+                <div class="input-name">
+                    <label>Name : </label>
+                    <input class="section-input-employee" type="text" placeholder="eg.Supitchaya">
+                </div>
+                <div class="input-surname">
+                    <label>Surname :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.Kitmok">
+                </div>
+                <div class="input-idcard">
+                    <label>ID Card :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.1111111111">
+                </div>
+                <div class="input-birthday">
+                    <label>Birthday :</label>
+                    <div class="bd-employee">
+                        <input class="section-bd-employee" type="number" placeholder="30">
+                        <input class="section-bd-employee" type="number" placeholder="May">
+                        <input class="section-bd-employee" type="number" placeholder="1978">
+                        <div class="line"></div>
+                    </div>
+
+                </div>
+
+                <p class="topic-contact">Contact</p>
+                <div class="input-address">
+                    <label>Address :</label>
+                    <textarea placeholder="eg.58/42 San-sai Chiang mai 11111"></textarea>
+                </div>
+                <div class="input-tel">
+                    <label>Tel :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.0899945689">
+                </div>
+                <div class="input-email">
+                    <label>E - mail :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.john-snow@gmail.com">
+                </div>
+                <div class="line"></div>
+                <p class="topic-employee">Work Info</p>
+                <div class="input-psition">
+                    <label>Position :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.UX/UI Designer">
+                </div>
+                <div class="input-salary">
+                    <div class="salary-employee">
+                        <label>Salary :</label>
+                        <input class="section-input-salary" type="text" placeholder="eg.30,000">
+                    </div>
+                    <div>
+                        <label>Start Date(Salary) :</label>
+                        <div class="bd-employee">
+                            <input class="section-bd-employee" type="number" placeholder="30">
+                            <input class="section-bd-employee" type="number" placeholder="May">
+                            <input class="section-bd-employee" type="number" placeholder="1978">
+                        </div>
+                    </div>
+                    <div>
+                        <button class="add-salary">+ Add Salary</button>
+                    </div>
+
+                </div>
+                <div class="line"></div>
+                <p class="topic-employee">Payment Information</p>
+                <div class="salary-employee">
+                    <label>Social Insurance :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.1111111111">
+                    <label>Name Bank :
+                        <select class="employee-bank">
+                            <option value="0">SCB</option>
+                            <option value="1">KBANK</option>
+                            <option value="1">TMB</option>
+                            <option value="1">CTMB</option>
+                            <option value="1">KTB</option>
+                        </select>
+                    </label>
+                    <label>Account No. :</label>
+                    <input class="section-input-employee" type="text" placeholder="eg.000-0-00000-0">
+                    <div class="line"></div>
+                    <p class="topic-employee">Employee Status</p>
+                    <label>Status :</label>
+                    <div class="box-switch">
+                        <label class="detail-switch">Active</label>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="photo-employee">
-
+            <div class="card-photo">
+                <div class="blue">
+                        <div class="image-phofile">
+                                <img src="../images/sine.jpg" class="image-employee">
+                                <div class="image-hov"></div>
+                            </div>
+                            <div class="name-employee">
+                                Supitchaya    Kitmok
+                            </div>
+                            <div class="line-employee"></div>
+                            <div class="career-employee">UX/UI Designer</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
