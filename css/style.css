@@ -204,9 +204,9 @@ a button.button-login {
     margin-left: 20px;
 }
 
-.statics {
+.employee-management {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 75px;
     font-size: 16px;
     color: #3B3E40;
     opacity: 0.8;
@@ -281,7 +281,7 @@ a button.button-login {
 }
 
 .icon-menu3 {
-    background-image: url(../images/iconmenu/icon-1.svg);
+    background-image: url(../images/iconmenu/Path189.svg);
     height: 40px;
     width: 226px;
     border: none;
@@ -366,8 +366,8 @@ input.search[type=text] {
 }
 
 .icon-search {
-    margin-left: -40px;
-    margin-top: 4px;
+    margin-left: -35px;
+    margin-top: 20px;
 }
 
 .btn-head {
@@ -433,6 +433,12 @@ th,
 td {
     text-align: left;
     padding: 20px;
+}
+th{
+    color: #707070;
+    font-size: 12px;
+    font-family: 'Red Hat Display';
+    font-weight: bold;
 }
 
 tr:nth-child(even) {
