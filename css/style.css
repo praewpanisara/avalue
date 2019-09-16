@@ -212,7 +212,7 @@ a button.button-login {
     opacity: 0.8;
 }
 
-.header>img.logout {
+.header>a img.logout {
     width: 67px;
     height: 19px;
     margin-top: 20px;
