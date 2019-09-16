@@ -204,6 +204,13 @@ a button.button-login {
     margin-left: 20px;
 }
 
+.statics {
+    margin-top: 20px;
+    margin-left: 75px;
+    font-size: 16px;
+    color: #3B3E40;
+    opacity: 0.8;
+}
 .employee-management {
     margin-top: 20px;
     margin-left: 75px;
