@@ -338,24 +338,31 @@ input.search[type=text] {
 .btn-head {
     background-color: #4DABF5;
     color: white;
-    width: 120px;
-    height: 18px;
-    padding: 15px 19px;
+    width: 136px;
+    padding-top: 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 6px;
-    margin-left: 450px;
-    margin-top: 2px;
+    margin-left: 495px;
+    margin-top: 22px;
     font-size: 12px;
 }
 .btn-head:hover {
     background-color: rgb(97, 180, 243);
 }
+.add-head {
+    display: flex;
+}
 .icon-add {
     float: left;
     width: 18px;
     height: 18px;
+    margin-left: 10px;
+    margin-top: -2px;
+}
+.add {
+    margin-right: 10px;
 }
 
 .box-headtable {
@@ -394,6 +401,139 @@ tr:nth-child(even) {
 }
 .box-table {
     margin-left: 255px;
+}
+td.click {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 52px;
+}
+td.click > a {
+    width: 24px;
+    height: 24px;
+}
+td.click > a .icon-repair,
+td.click > a .icon-delete {
+    width: 100%;
+    height: 100%;
+}
+td.click > a:first-child{
+    margin-right: 8px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 199px auto;
+    padding: 20px;
+    background: #fff;
+    width: 542px;
+    height: 322px;
+    position: relative;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #707070;
+  }
+ 
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  .icon-deletepopup {
+    margin-top: 61px;
+    margin-left: 245px;
+  }
+  .title-delete {
+      font-family: 'Red Hat Display';
+      font-size: 18px;
+      color: #707070;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-left: 183px;
+      letter-spacing: 1px;
+  }
+  .content-delete {
+    font-family: 'Red Hat Display';
+    font-size: 14px;
+    color: #707070;
+    margin-top: 15px;
+    margin-left: 122px;
+  }
+ .btn-cancel {
+    background-color: #FFFFFF;
+    border:  2px solid #7070707a;
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    font-weight: bold;
+    color: #707070;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 183px;
+} 
+.btn-delete {
+    background-color: #EA4335;
+    border: none;
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 16px;
+} 
+
+a.cancel {
+    text-decoration: none;
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    font-weight: bold;
+    color: #707070;
+}
+a.delete {
+    text-decoration: none;
+    font-family: 'Red Hat Display';
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 

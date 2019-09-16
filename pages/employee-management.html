@@ -40,11 +40,13 @@
     </div>
     <div class="bg-employee">
         <div class="box-head">
-                    <input class="search" type="text" placeholder="Search" name="search2">
+            <div class="add-head">   
+                <input class="search" type="text" placeholder="Search" name="search2">
                   <img class="icon-search" src="../images/employee/6.svg">
-                  <a href="#" class="btn-head">
+                 <a href="#" class="btn-head">
                       <img class="icon-add" src="../images/employee/7.svg">
                       <p class="add">Add Employee</p></a>
+                    </div> 
         </div>
         <div class="box-headtable"><div class="title-list">List of employees</div></div>
         <div class="box-table">
@@ -58,33 +60,70 @@
                 <td><img class="icon-pp" src="../images/employee/12.png"></td>
                 <td></td>
                 <td>$0</td>
-                <td><a href="#"><div class="icon"><img class="icon-repair" src="../images/employee/8.svg">
-                    <img class="icon-delete" src="../images/employee/9.svg"></div> </a></td>
+                <td class="click">
+                    <a href="#">
+                        <img class="icon-repair" src="../images/employee/8.svg" />
+                    </a>
+                    <a href="#popup1">  
+                        <img class="icon-delete" src="../images/employee/9.svg">
+                    </a>
+                </td>
                 </tr>
                 <tr>
                 <td><img class="icon-pp" src="../images/employee/12.png"></td>
                 <td></td>
                 <td>$0</td>
-                <td><a href="#"><div class="icon"><img class="icon-repair" src="../images/employee/8.svg">
-                    <img class="icon-delete" src="../images/employee/9.svg"></div> </a></td>
+                <td class="click">
+                    <a href="#">
+                        <img class="icon-repair" src="../images/employee/8.svg" />
+                    </a>
+                    <a href="#popup1">  
+                        <img class="icon-delete" src="../images/employee/9.svg">
+                    </a>
+                </td>
                 </tr>
                 <tr>
                 <td><img class="icon-pp" src="../images/employee/12.png"></td>
                 <td></td>
                 <td>$0</td>
-                <td><a href="#"><div class="icon"><img class="icon-repair" src="../images/employee/8.svg">
-                    <img class="icon-delete" src="../images/employee/9.svg"></div> </a></td>
+                <td class="click">
+                    <a href="#">
+                        <img class="icon-repair" src="../images/employee/8.svg" />
+                    </a>
+                    <a href="#popup1">  
+                        <img class="icon-delete" src="../images/employee/9.svg">
+                    </a>
+                </td>
                 </tr>
                 <tr>
                 <td><img class="icon-pp" src="../images/employee/12.png"></td>
                 <td></td>
                 <td>$0</td>
-                <td><a href="#"><div class="icon"><img class="icon-repair" src="../images/employee/8.svg">
-                    <img class="icon-delete" src="../images/employee/9.svg"></div> </a></td>
+                <td class="click">
+                    <a href="#">
+                        <img class="icon-repair" src="../images/employee/8.svg" />
+                    </a>
+                    <a href="#popup1">  
+                        <img class="icon-delete" src="../images/employee/9.svg">
+                    </a>
+                </td>
                 </tr>
               </table>
             </div>
     </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="icondeletepopup"><img class="icon-deletepopup" src="../images/employee/13.png"></div>
+            <div class="title-delete">Delete Confirmation</div>
+            <div class="content-delete">
+                    You are about to delete a record, Are You Sure?
+            </div>
+            <button class="btn-cancel"><a href="#" class="cancel">Cancel</button></a>
+            <button class="btn-delete"><a href="#" class="delete">Delete</button></a>
+        </div>
+    </div>
+
 
 </body>
 
