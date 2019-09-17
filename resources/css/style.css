@@ -371,6 +371,7 @@ p.text-menu {
 }
 
 input.search[type=text] {
+    font-family: 'RedHatDisplay';
     font-size: 14px;
     border: 1.1px solid #70707083;
     padding: 0 17px;
@@ -399,6 +400,7 @@ input.search[type=text] {
     margin-left: 495px;
     margin-top: 22px;
     font-size: 12px;
+    font-family: 'RedHatDisplay';
 }
 
 .btn-head:hover {
@@ -432,6 +434,7 @@ input.search[type=text] {
 }
 
 .title-list {
+    font-family: 'RedHatDisplay';
     font-size: 20px;
     color: #707070;
     font-weight: bold;
@@ -447,16 +450,18 @@ table.table-employee {
     background-color: #FFFFFF;
     margin-left: 46px;
     color: #707070;
+    font-family: 'RedHatDisplay';
 }
 
-th.list-employee,td.detail-employee {
+th.list-employee,
+td.list-detail {
     text-align: left;
     padding: 20px;
 }
 th.list-employee{
     color: #707070;
     font-size: 12px;
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-weight: bold;
 }
 
@@ -518,7 +523,7 @@ td.click>a:first-child {
 .popup h2 {
     margin-top: 0;
     color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+    font-family: 'RedHatDisplay';
 }
 
 .popup .close {
@@ -529,6 +534,7 @@ td.click>a:first-child {
     font-weight: bold;
     text-decoration: none;
     color: #707070;
+    font-family: 'RedHatDisplay';
 }
 
 .popup .content {
@@ -542,7 +548,7 @@ td.click>a:first-child {
 }
 
 .title-delete {
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-size: 18px;
     color: #707070;
     font-weight: bold;
@@ -552,7 +558,7 @@ td.click>a:first-child {
 }
 
 .content-delete {
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-size: 14px;
     color: #707070;
     margin-top: 15px;
@@ -562,7 +568,7 @@ td.click>a:first-child {
 .btn-cancel {
     background-color: #FFFFFF;
     border: 2px solid #7070707a;
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-size: 12px;
     font-weight: bold;
     color: #707070;
@@ -581,7 +587,7 @@ td.click>a:first-child {
 .btn-delete {
     background-color: #EA4335;
     border: none;
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-size: 12px;
     font-weight: bold;
     color: #FFFFFF;
@@ -599,7 +605,7 @@ td.click>a:first-child {
 
 a.cancel {
     text-decoration: none;
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-size: 12px;
     font-weight: bold;
     color: #707070;
@@ -607,7 +613,7 @@ a.cancel {
 
 a.delete {
     text-decoration: none;
-    font-family: 'Red Hat Display';
+    font-family: 'RedHatDisplay';
     font-size: 12px;
     font-weight: bold;
     color: #FFFFFF;
