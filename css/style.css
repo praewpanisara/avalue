@@ -436,19 +436,18 @@ table.table-employee {
     color: #707070;
 }
 
-th,
-td {
+th.list-employee,td.detail-employee {
     text-align: left;
     padding: 20px;
 }
-th{
+th.list-employee{
     color: #707070;
     font-size: 12px;
     font-family: 'Red Hat Display';
     font-weight: bold;
 }
 
-tr:nth-child(even) {
+tr.topic-employee:nth-child(even) {
     background-color: #f2f2f2;
 }
 
