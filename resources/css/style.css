@@ -1,11 +1,20 @@
+@font-face{
+    font-family: 'RedHatDisplay';
+    src: url(../../vendors/font/RedHatDisplay/RedHatDisplay-Regular.ttf)
+}
+@font-face{
+    font-family: 'RedHatDisplay-Medium';
+    src: url(../../vendors/font/RedHatDisplay/RedHatDisplay-Medium.ttf)
+}
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'RedHatDisplay';
 }
 
 body {
     background-color: #EEEEEE;
+    font-family: 'RedHatDisplay';
 }
 
 .grid-container {
@@ -204,13 +213,14 @@ a button.button-login {
     margin-left: 20px;
 }
 
-.employee-management {
+.statics {
     margin-top: 20px;
     margin-left: 75px;
     font-size: 16px;
     color: #3B3E40;
     opacity: 0.8;
 }
+
 .employee-management {
     margin-top: 20px;
     margin-left: 75px;
@@ -394,9 +404,11 @@ input.search[type=text] {
 .btn-head:hover {
     background-color: rgb(97, 180, 243);
 }
+
 .add-head {
     display: flex;
 }
+
 .icon-add {
     float: left;
     width: 18px;
@@ -404,6 +416,7 @@ input.search[type=text] {
     margin-left: 10px;
     margin-top: -2px;
 }
+
 .add {
     margin-right: 10px;
 }
@@ -441,7 +454,8 @@ td {
     text-align: left;
     padding: 20px;
 }
-th{
+
+th {
     color: #707070;
     font-size: 12px;
     font-family: 'Red Hat Display';
@@ -455,23 +469,28 @@ tr:nth-child(even) {
 .box-table {
     margin-left: 255px;
 }
+
 td.click {
     display: flex;
     justify-content: flex-end;
     margin-right: 52px;
 }
-td.click > a {
+
+td.click>a {
     width: 24px;
     height: 24px;
 }
-td.click > a .icon-repair,
-td.click > a .icon-delete {
+
+td.click>a .icon-repair,
+td.click>a .icon-delete {
     width: 100%;
     height: 100%;
 }
-td.click > a:first-child{
+
+td.click>a:first-child {
     margin-right: 8px;
 }
+
 .overlay {
     position: fixed;
     top: 0;
@@ -482,27 +501,29 @@ td.click > a:first-child{
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .popup {
+}
+
+.popup {
     margin: 199px auto;
     padding: 20px;
     background: #fff;
     width: 542px;
     height: 322px;
     position: relative;
-  }
-  
-  .popup h2 {
+}
+
+.popup h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
+}
+
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -510,36 +531,39 @@ td.click > a:first-child{
     font-weight: bold;
     text-decoration: none;
     color: #707070;
-  }
- 
-  .popup .content {
+}
+
+.popup .content {
     max-height: 30%;
     overflow: auto;
-  }
-  
-  .icon-deletepopup {
+}
+
+.icon-deletepopup {
     margin-top: 61px;
     margin-left: 245px;
-  }
-  .title-delete {
-      font-family: 'Red Hat Display';
-      font-size: 18px;
-      color: #707070;
-      font-weight: bold;
-      margin-top: 15px;
-      margin-left: 183px;
-      letter-spacing: 1px;
-  }
-  .content-delete {
+}
+
+.title-delete {
+    font-family: 'Red Hat Display';
+    font-size: 18px;
+    color: #707070;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 183px;
+    letter-spacing: 1px;
+}
+
+.content-delete {
     font-family: 'Red Hat Display';
     font-size: 14px;
     color: #707070;
     margin-top: 15px;
     margin-left: 122px;
-  }
- .btn-cancel {
+}
+
+.btn-cancel {
     background-color: #FFFFFF;
-    border:  2px solid #7070707a;
+    border: 2px solid #7070707a;
     font-family: 'Red Hat Display';
     font-size: 12px;
     font-weight: bold;
@@ -554,7 +578,8 @@ td.click > a:first-child{
     border-radius: 4px;
     margin-top: 40px;
     margin-left: 183px;
-} 
+}
+
 .btn-delete {
     background-color: #EA4335;
     border: none;
@@ -572,7 +597,7 @@ td.click > a:first-child{
     border-radius: 4px;
     margin-top: 40px;
     margin-left: 16px;
-} 
+}
 
 a.cancel {
     text-decoration: none;
@@ -581,6 +606,7 @@ a.cancel {
     font-weight: bold;
     color: #707070;
 }
+
 a.delete {
     text-decoration: none;
     font-family: 'Red Hat Display';
@@ -697,7 +723,7 @@ p.topic-employee {
 
 p.topic-contact {
     font-size: 18px;
-    margin-top: 180px;
+    margin-top: 200px;
     font-weight: bold;
     color: #707070;
 }
@@ -716,8 +742,9 @@ input.section-input-employee[type=text] {
     color: #000;
 
 }
+
 input.section-bd-employee[type=text] {
-    width:270px;
+    width: 270px;
     height: 40px;
     box-sizing: border-box;
     font-size: 14px;
@@ -727,8 +754,9 @@ input.section-bd-employee[type=text] {
     margin-right: 12px;
 
 }
+
 input.section-bd-employee[type=date] {
-    width:270px;
+    width: 286px;
     height: 40px;
     box-sizing: border-box;
     font-size: 14px;
@@ -754,7 +782,14 @@ input.section-bd-employee[type=date] {
     border-bottom: 1px solid#707070;
     opacity: 0.5;
     width: 500px;
-    padding-top: 56px;
+    margin-top: 70px;
+}
+
+.line1 {
+    border-bottom: 1px solid#707070;
+    opacity: 0.5;
+    width: 500px;
+    margin-top: 110px;
 }
 
 textarea {
@@ -782,8 +817,25 @@ input.section-input-salary[type=text] {
 .input-salary {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-gap: 16px;
+
 }
+
+th {
+    color: #707070;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 10px;
+
+}
+
+th,
+td {
+    text-align: left;
+    padding: 0;
+    padding-top: 15px;
+}
+
+
 
 .salary-employee {
     width: 212px;
@@ -815,6 +867,17 @@ select.employee-bank {
     opacity: 0.85;
     font-size: 14px;
     margin-top: 8px;
+}
+
+select.employee-day {
+    width: 80px;
+    padding: 10px 10px;
+    border-radius: 2px;
+    border: 1px solid #707070;
+    opacity: 0.85;
+    font-size: 14px;
+    margin-top: 8px;
+    float: left;
 }
 
 .switch {
@@ -893,23 +956,31 @@ label.detail-switch {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+label {
+    margin-top: 10px;
+}
+
 .card-photo {
     height: 316px;
     background-color: #FFFFFF;
 }
+
 .card-photo .blue {
     height: 120px;
     width: 100%;
     background-color: #4DABF5;
 }
+
 .image-phofile {
     width: 140px;
     height: 140px;
     margin: auto;
     position: relative;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
-.image-phofile:hover .image-hov{
+
+.image-phofile:hover .image-hov {
     width: 140px;
     height: 50%;
     position: absolute;
@@ -922,6 +993,7 @@ label.detail-switch {
     background-repeat: no-repeat;
     background-position: 58px 20px;
 }
+
 img.image-employee {
     width: 100%;
     height: 100%;
@@ -931,25 +1003,25 @@ img.image-employee {
 
 }
 
-.name-employee{
+.name-employee {
     color: #707070;
     font-size: 16px;
     text-align: center;
     margin-top: 70px;
 
 }
-.line-employee{
+
+.line-employee {
     border-bottom: 1px solid#707070;
     width: 224px;
     margin: auto;
     margin-bottom: 17px;
     margin-top: 17px;
 }
-.career-employee{
+
+.career-employee {
     font-size: 14px;
     color: #707070;
     opacity: 0.8;
     text-align: center;
 }
-
-
