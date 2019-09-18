@@ -247,7 +247,7 @@ a button.button-login {
 /********************************** menu **********************************/
 .menu {
     display: block;
-    height: 100%;
+    height: 100vh;
     width: 226px;
     background-color: #F5F5F5;
     display: grid;
@@ -365,12 +365,18 @@ p.text-menu {
     padding-left: 48px;
     padding-top: 13px;
 }
-
+ 
+.bg-employee {
+    display: flex;
+}
+.listofemployees {
+    display: block;
+}
 .box-head {
-    float: left;
-    margin-left: 300px;
-    margin-top: -632px;
-    width: 962px;
+    margin-left: 46px;
+    margin-top: 48px;
+    margin-right: 46px;
+    width: 100%;
     border: 0.75px solid #FFFFFF;
     height: 84px;
     background-color: #FFFFFF;
@@ -380,7 +386,7 @@ input.search[type=text] {
     font-family: 'RedHatDisplay';
     font-size: 14px;
     border: 1.1px solid #70707083;
-    padding: 0 17px;
+    padding: 0 35px 0 17px;
     width: 250px;
     height: 40px;
     text-align: left;
@@ -392,6 +398,7 @@ input.search[type=text] {
 .icon-search {
     margin-left: -35px;
     margin-top: 20px;
+    z-index: 2;
 }
 
 .btn-head {
@@ -403,7 +410,8 @@ input.search[type=text] {
     text-decoration: none;
     display: inline-block;
     border-radius: 6px;
-    margin-left: 495px;
+    margin-left: 640px;
+    margin-right: -60px;
     margin-top: 22px;
     font-size: 12px;
     font-family: 'RedHatDisplay';
@@ -430,10 +438,9 @@ input.search[type=text] {
 }
 
 .box-headtable {
-    float: left;
-    margin-left: 300px;
-    margin-top: -516px;
-    width: 961px;
+    width: 100%;
+    margin-left: 46px;
+    margin-top: 26px;
     border: 0.75px solid #FFFFFF;
     height: 80px;
     background-color: #FFFFFF;
@@ -449,12 +456,10 @@ input.search[type=text] {
 }
 
 table.table-employee {
-    float: left;
-    margin-top: -445px;
     border-collapse: collapse;
-    width: 962px;
+    width: 100.55%;
     background-color: #FFFFFF;
-    margin-left: 46px;
+    margin-left: 42px;
     color: #707070;
     font-family: 'RedHatDisplay';
 }
@@ -463,6 +468,12 @@ th.list-employee,
 td.list-detail {
     text-align: left;
     padding: 20px;
+}
+.td.list-detail {
+    width: 150px;
+}
+.th.list-employee{
+    width: 100px;
 }
 
 th.list-employee {
@@ -477,7 +488,18 @@ tr.topic-employee:nth-child(even) {
 }
 
 .box-table {
-    margin-left: 255px;
+    margin-left:4px;
+}
+.icon-pp {
+    padding: 20px;
+}
+.icon-name {
+    display: flex;
+}
+.name-lastname {
+    padding: 22px;
+    width: 250px;
+    overflow:hidden;
 }
 
 td.click {
@@ -489,6 +511,7 @@ td.click {
 td.click>a {
     width: 24px;
     height: 24px;
+    padding: 20px;
 }
 
 td.click>a .icon-repair,
@@ -498,7 +521,7 @@ td.click>a .icon-delete {
 }
 
 td.click>a:first-child {
-    margin-right: 8px;
+    margin-right:0;
 }
 
 .overlay {
