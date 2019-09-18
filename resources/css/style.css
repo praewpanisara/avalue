@@ -302,6 +302,16 @@ a button.button-login {
 
 }
 
+.icon-menu5 {
+    background-image: url(../images/iconmenu/Path167.svg);
+    height: 40px;
+    width: 226px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 24px 15px;
+
+}
+
 .icon-menu3 {
     background-image: url(../images/iconmenu/Path189.svg);
     height: 40px;
@@ -1077,16 +1087,18 @@ img.image-employee {
     color: white;
     width: 116px;
     padding-top: 12px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 6px;
-    margin-left: 780px;
-    margin-right: 50px;
-    margin-top: 25px;
+    margin-right: 32px;
+    margin-top: 23px;
     font-size: 12px;
     font-family: 'RedHatDisplay';
+}
+.btn-newsalary:hover {
+    background-color: rgb(97, 180, 243);
 }
 .select-yearsalary {
     display: flex;
@@ -1102,4 +1114,81 @@ img.image-employee {
 }
 .add-headsalary {
     display: flex;
+}
+.box-headtablesalary {
+    margin-left: 46px;
+    margin-top: 48px;
+    margin-right: 46px;
+    width: 90%;
+    border: 0.75px solid #FFFFFF;
+    height: 84px;
+    background-color: #FFFFFF;
+}
+.title-salary {
+    margin-top: 20px;
+    margin-left: 45px;
+    font-size: 16px;
+    color: #3B3E40;
+    opacity: 0.8;
+}
+.title-employeesalary {
+    font-family: 'RedHatDisplay';
+    font-size: 20px;
+    color: #707070;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-left: 16px;
+}
+table.table-salary {
+    border-collapse: collapse;
+    width: 90.4%;
+    background-color: #FFFFFF;
+    margin-left: 42px;
+    color: #707070;
+    font-family: 'RedHatDisplay';
+}
+
+th.list-monthsalary,
+td.list-detailsalary {
+    padding: 10px;
+    width: 50px;
+}
+th.list-monthsalary{
+    text-align: right;
+    width: 50px;
+    border-bottom: 1px solid #70707048;
+}
+
+th.list-monthsalary {
+    color: #707070;
+    font-size: 12px;
+    font-family: 'RedHatDisplay';
+    font-weight: bold;
+}
+td.list-detailsalary {
+    text-align: left;
+    
+}
+th.list-monthsalaryfirst {
+    text-align: left;
+    color: #707070;
+    font-size: 12px;
+    font-family: 'RedHatDisplay';
+    font-weight: bold;
+    margin-left: 64px;
+}
+
+tr.topic-salaryadd {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #70707048;
+}
+
+.box-table {
+    margin-left:4px;
+}
+.list-detailnetpaid {
+    color: #4285F4;
+    font-size: 14px;
+    font-family: 'RedHatDisplay';
+    font-weight: bold;
 }
