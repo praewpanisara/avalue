@@ -246,16 +246,15 @@ a button.button-login {
 
 /********************************** menu **********************************/
 .menu {
-    display: block;
     height: 100vh;
-    width: 226px;
-    background-color: #F5F5F5;
+    width: 100%;
     display: grid;
     grid-template-columns: 226px auto;
 }
 
 .box-menu {
     display: grid;
+    background-color: #F5F5F5;
     grid-template-rows: 65px auto;
 }
 
@@ -376,7 +375,7 @@ p.text-menu {
     margin-left: 46px;
     margin-top: 48px;
     margin-right: 46px;
-    width: 100%;
+    width: 90%;
     border: 0.75px solid #FFFFFF;
     height: 84px;
     background-color: #FFFFFF;
@@ -410,8 +409,7 @@ input.search[type=text] {
     text-decoration: none;
     display: inline-block;
     border-radius: 6px;
-    margin-left: 640px;
-    margin-right: -60px;
+    margin-right: 32px;
     margin-top: 22px;
     font-size: 12px;
     font-family: 'RedHatDisplay';
@@ -423,8 +421,14 @@ input.search[type=text] {
 
 .add-head {
     display: flex;
+    justify-content: space-between;
 }
-
+.search-add {
+    display: flex;
+}
+.btn-addemployee {
+    display: flex;
+}
 .icon-add {
     float: left;
     width: 18px;
@@ -438,7 +442,7 @@ input.search[type=text] {
 }
 
 .box-headtable {
-    width: 100%;
+    width: 90%;
     margin-left: 46px;
     margin-top: 26px;
     border: 0.75px solid #FFFFFF;
@@ -457,7 +461,7 @@ input.search[type=text] {
 
 table.table-employee {
     border-collapse: collapse;
-    width: 100.55%;
+    width: 90.4%;
     background-color: #FFFFFF;
     margin-left: 42px;
     color: #707070;
