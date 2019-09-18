@@ -467,10 +467,9 @@ table.table-employee {
 th.list-employee,
 td.list-detail {
     text-align: left;
-    padding: 20px;
-}
-.td.list-detail {
-    width: 150px;
+    padding: 10px;
+    width: 400px;
+
 }
 .th.list-employee{
     width: 100px;
@@ -498,8 +497,10 @@ tr.topic-employee:nth-child(even) {
 }
 .name-lastname {
     padding: 22px;
-    width: 250px;
-    overflow:hidden;
+    width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 td.click {
@@ -511,7 +512,7 @@ td.click {
 td.click>a {
     width: 24px;
     height: 24px;
-    padding: 20px;
+    padding-top: 14px;
 }
 
 td.click>a .icon-repair,
@@ -521,7 +522,7 @@ td.click>a .icon-delete {
 }
 
 td.click>a:first-child {
-    margin-right:0;
+    margin-right:8px;
 }
 
 .overlay {
@@ -1058,4 +1059,43 @@ img.image-employee {
     color: #707070;
     opacity: 0.8;
     text-align: center;
+}
+
+ /********************************** salary **********************************/
+
+.select-year {
+    margin-top: 25px;
+    margin-left: 32px;
+}
+
+.btn-newsalary {
+    background-color: #4DABF5;
+    color: white;
+    width: 116px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+    margin-left: 780px;
+    margin-right: 50px;
+    margin-top: 25px;
+    font-size: 12px;
+    font-family: 'RedHatDisplay';
+}
+.select-yearsalary {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-addsalary {
+    margin-right: 70px;
+    margin-top: 5px;
+}
+.add-newsalary {
+    margin-left: 18px;
+    margin-top: -17px;
+}
+.add-headsalary {
+    display: flex;
 }
