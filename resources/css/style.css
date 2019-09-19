@@ -256,6 +256,7 @@ a button.button-login {
     display: grid;
     background-color: #F5F5F5;
     grid-template-rows: 65px auto;
+    background-color: #F5F5F5;
 }
 
 .topic-menu>p {
@@ -269,7 +270,6 @@ a button.button-login {
 .section-menu {
     font-size: 12px;
     border-left: 4px;
-    width: 226px;
 }
 
 .icon-menu {
@@ -477,6 +477,14 @@ table.table-employee {
     color: #707070;
     font-family: 'RedHatDisplay';
 }
+table.table-salary {
+    border-collapse: collapse;
+    width: 90.4%;
+    background-color: #FFFFFF;
+    margin-left: 42px;
+    color: #707070;
+    font-family: 'RedHatDisplay';
+}
 
 th.list-employee,
 td.list-detail {
@@ -485,9 +493,31 @@ td.list-detail {
     width: 400px;
 
 }
+th.list-salary,
+td.list-salary {
+    text-align: left;
+    padding: 10px;
+    width: 150px;
+}
+td.list-salary{
+    font-weight: initial;
+    text-align: right;
+    padding: 0;
+}
+th.list-salary{
+    font-weight: bold;
+}
 .th.list-employee{
     width: 100px;
 }
+
+th.list-salary-1
+{
+    text-align: right;
+    padding: 0;
+    font-weight: bold;
+}
+
 
 th.list-employee {
     color: #707070;
@@ -497,6 +527,9 @@ th.list-employee {
 }
 
 tr.topic-employee:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr.topic-salary:nth-child(even) {
     background-color: #f2f2f2;
 }
 
@@ -510,12 +543,35 @@ tr.topic-employee:nth-child(even) {
     display: flex;
 }
 .name-lastname {
-    padding: 22px;
+    padding: 22px 0;
     width: 120px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
+
+td.click-1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 23px;
+    padding-top: 20px;
+}
+
+td.click-1>a {
+    width: 24px;
+    height: 24px;
+    margin-right:8px;
+   
+    
+}
+
+td.click-1>a .icon-repair,
+td.click-1>a .icon-delete {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 td.click {
     display: flex;
@@ -535,7 +591,7 @@ td.click>a .icon-delete {
     height: 100%;
 }
 
-td.click>a:first-child {
+td.click>a {
     margin-right:8px;
 }
 
@@ -666,10 +722,11 @@ a.delete {
 
 
 .blog-statistics {
-    width: 962px;
+    width: 90%;
     height: 502px;
     background-color: #FFFFFF;
-    margin: 50px 50px;
+    margin: auto;
+    margin-top: 50px;
 
 }
 
@@ -748,7 +805,7 @@ a button.submit {
 .detail-employee {
     background-color: #fff;
     width: 776px;
-    height: 1852px;
+    height: 100%;
     padding-bottom: 48px;
 }
 
@@ -805,14 +862,14 @@ input.section-bd-employee[type=text] {
 }
 
 input.section-bd-employee[type=date] {
-    width: 286px;
+    width: 245px;
     height: 40px;
     box-sizing: border-box;
     font-size: 14px;
     background-color: white;
     padding-left: 10px;
     color: #000;
-    margin-right: 12px;
+    margin-left: 40px;
 
 }
 
@@ -883,6 +940,9 @@ td {
     padding: 0;
     padding-top: 15px;
 }
+th.start-salary{
+    padding-left: 40px;
+}
 
 
 
@@ -905,6 +965,7 @@ td {
     font-size: 14px;
     font-weight: bold;
     color: #707070;
+    margin-top: 16px;
 }
 
 select.employee-bank {
@@ -928,6 +989,27 @@ select.employee-day {
     margin-top: 8px;
     float: left;
 }
+
+.switch-status-salary {
+    position: relative;
+    width: 35px;
+    height: 20px;
+    margin-left: 90px;
+    margin-right: 18px;
+    margin-top: 10px;
+
+}
+.switch-status-salary input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+label.detail-switch-status-salary {
+    padding-left: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 .switch {
     position: relative;
@@ -969,7 +1051,17 @@ select.employee-day {
     transition: .4s;
 }
 
+input.status-salary:checked+.slider {
+    background-color: #13CB13;
+}
 
+input.status-salary:focus+.slider {
+    box-shadow: 0 0 1px #13CB13;
+}
+
+input.status-salary:checked+.slider:before {
+    transform: translateX(15px);
+}
 input:checked+.slider {
     background-color: #2196F3;
 }
@@ -1115,6 +1207,36 @@ img.image-employee {
 .add-headsalary {
     display: flex;
 }
+
+button.del-icon{
+    background-color: #fff;
+    border: none;
+    width: 24px;
+    height: 24px;
+}
+.topic-month{
+    font-weight: bold;
+    font-size: 20px;
+    color: #707070;
+    margin-top: 28px;
+    margin-left: 16px;
+}
+.back-salary{
+width: 70px;
+height: 24px;
+color: #7070709d;
+font-weight: bold;
+padding-left: 20px;
+
+}
+button.back-salary{
+    background-image: url(../images/icon-salary/back.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #EEEEEE;
+    margin-top: 25px;
+    margin-left: 45px;
+}
 .box-headtablesalary {
     margin-left: 46px;
     margin-top: 48px;
@@ -1191,4 +1313,5 @@ tr.topic-salaryadd {
     font-size: 14px;
     font-family: 'RedHatDisplay';
     font-weight: bold;
+
 }
