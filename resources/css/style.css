@@ -1106,11 +1106,11 @@ img.image-employee {
 }
 .icon-addsalary {
     margin-right: 70px;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 .add-newsalary {
     margin-left: 18px;
-    margin-top: -17px;
+    margin-top: -18px;
 }
 .add-headsalary {
     display: flex;
@@ -1150,32 +1150,33 @@ table.table-salary {
 
 th.list-monthsalary,
 td.list-detailsalary {
-    padding: 10px;
-    width: 50px;
+    padding: 15px;
+    width: 10%;
 }
 th.list-monthsalary{
     text-align: right;
-    width: 50px;
+    width: 10%;
     border-bottom: 1px solid #70707048;
 }
 
 th.list-monthsalary {
     color: #707070;
     font-size: 12px;
-    font-family: 'RedHatDisplay';
     font-weight: bold;
 }
 td.list-detailsalary {
-    text-align: left;
+    text-align: right;
     
 }
 th.list-monthsalaryfirst {
     text-align: left;
     color: #707070;
     font-size: 12px;
-    font-family: 'RedHatDisplay';
     font-weight: bold;
-    margin-left: 64px;
+    padding-top: 0;
+    padding-left: 55px;
+    border-bottom: 1px solid #70707048;
+    width: 10%;
 }
 
 tr.topic-salaryadd {
@@ -1183,12 +1184,34 @@ tr.topic-salaryadd {
     border-bottom: 2px solid #70707048;
 }
 
-.box-table {
-    margin-left:4px;
-}
-.list-detailnetpaid {
+td.list-detailnetpaid {
     color: #4285F4;
     font-size: 14px;
-    font-family: 'RedHatDisplay';
     font-weight: bold;
+    text-align: center;
+    padding-top: 0;
+    width: 10%;
+    padding-left: 55px;
+}
+th.list-monthsalarynetpaid {
+    color: #707070;
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 58px;
+    text-align: right;
+    padding-top: 0;
+    border-bottom: 1px solid #70707048;
+}
+.month-folder {
+    margin-left: 25px;
+}
+.icon-namemonth {
+    display: flex;
+}
+.box-salarylast {
+    width: 90%;
+    height: 250px;
+    background-color: #FFFFFF;
+    margin-left: 46px;
+    border: 0.75px solid #FFFFFF;
 }
