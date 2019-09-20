@@ -18,6 +18,7 @@ body {
     background-color: #EEEEEE;
     font-family: 'RedHatDisplay';
 }
+
 /********************************** login **********************************/
 .grid-container {
     display: grid;
@@ -122,11 +123,11 @@ input.section-input[type=password] {
 }
 
 .checkbox-label input:checked~.checkbox-custom {
-    background-color: #FFFFFF;
+    background-color: #4DABF5;
     border-radius: 2px;
     transform: rotate(0deg) scale(1);
     opacity: 1;
-    border: 1px solid #707070;
+    border: 1px solid #4DABF5;
 }
 
 .checkbox-label .checkbox-custom::after {
@@ -137,7 +138,7 @@ input.section-input[type=password] {
     height: 0px;
     width: 0px;
     border-radius: 2px;
-    border: solid #4DABF5;
+    border: solid #fff;
     border-width: 0 3px 3px 0;
     transform: rotate(0deg) scale(0);
     opacity: 1;
@@ -153,7 +154,7 @@ input.section-input[type=password] {
     top: 0px;
     width: 6px;
     height: 12px;
-    border: solid #4DABF5;
+    border: solid #fff;
     border-width: 0 2px 2px 0;
     background-color: transparent;
 }
@@ -165,7 +166,7 @@ input.section-input[type=password] {
     width: 0px;
     height: 0px;
     border-radius: 2px;
-    border: 2px solid #FFFFFF;
+    border: 2px solid #4DABF5;
     transform: scale(0);
 }
 
@@ -374,13 +375,15 @@ p.text-menu {
     padding-left: 48px;
     padding-top: 13px;
 }
- 
+
 .bg-employee {
     display: flex;
 }
+
 .listofemployees {
     display: block;
 }
+
 .box-head {
     margin-left: 46px;
     margin-top: 48px;
@@ -433,12 +436,15 @@ input.search[type=text] {
     display: flex;
     justify-content: space-between;
 }
+
 .search-add {
     display: flex;
 }
+
 .btn-addemployee {
     display: flex;
 }
+
 .icon-add {
     float: left;
     width: 18px;
@@ -477,6 +483,7 @@ table.table-employee {
     color: #707070;
     font-family: 'RedHatDisplay';
 }
+
 table.table-salary {
     border-collapse: collapse;
     width: 90.4%;
@@ -493,26 +500,29 @@ td.list-detail {
     width: 400px;
 
 }
+
 th.list-salary,
 td.list-salary {
     text-align: left;
     padding: 10px;
     width: 150px;
 }
-td.list-salary{
+
+td.list-salary {
     font-weight: initial;
     text-align: right;
     padding: 0;
 }
-th.list-salary{
+
+th.list-salary {
     font-weight: bold;
 }
-.th.list-employee{
+
+.th.list-employee {
     width: 100px;
 }
 
-th.list-salary-1
-{
+th.list-salary-1 {
     text-align: right;
     padding: 0;
     font-weight: bold;
@@ -529,19 +539,23 @@ th.list-employee {
 tr.topic-employee:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 tr.topic-salary:nth-child(even) {
     background-color: #f2f2f2;
 }
 
 .box-table {
-    margin-left:4px;
+    margin-left: 4px;
 }
+
 .icon-pp {
     padding: 20px;
 }
+
 .icon-name {
     display: flex;
 }
+
 .name-lastname {
     padding: 22px 0;
     width: 120px;
@@ -589,7 +603,7 @@ td.click>a .icon-delete {
 }
 
 td.click>a {
-    margin-right:8px;
+    margin-right: 8px;
 }
 
 .overlay {
@@ -720,7 +734,7 @@ a.delete {
 
 .blog-statistics {
     width: 90%;
-    height: 502px;
+    height: auto;
     background-color: #FFFFFF;
     margin: auto;
     margin-top: 50px;
@@ -937,7 +951,8 @@ td {
     padding: 0;
     padding-top: 15px;
 }
-th.start-salary{
+
+th.start-salary {
     padding-left: 40px;
 }
 
@@ -996,11 +1011,13 @@ select.employee-day {
     margin-top: 10px;
 
 }
+
 .switch-status-salary input {
     opacity: 0;
     width: 0;
     height: 0;
 }
+
 label.detail-switch-status-salary {
     padding-left: 19px;
     margin-top: 10px;
@@ -1059,6 +1076,7 @@ input.status-salary:focus+.slider {
 input.status-salary:checked+.slider:before {
     transform: translateX(15px);
 }
+
 input:checked+.slider {
     background-color: #2196F3;
 }
@@ -1164,7 +1182,7 @@ img.image-employee {
     text-align: center;
 }
 
- /********************************** salary **********************************/
+/********************************** salary **********************************/
 
 .select-year {
     margin-top: 25px;
@@ -1186,47 +1204,55 @@ img.image-employee {
     font-size: 12px;
     font-family: 'RedHatDisplay';
 }
+
 .btn-newsalary:hover {
     background-color: rgb(97, 180, 243);
 }
+
 .select-yearsalary {
     display: flex;
     justify-content: space-between;
 }
+
 .icon-addsalary {
     margin-right: 70px;
     margin-top: 1px;
 }
+
 .add-newsalary {
     margin-left: 18px;
     margin-top: -18px;
 }
+
 .add-headsalary {
     display: flex;
 }
 
-button.del-icon{
+button.del-icon {
     background-color: #fff;
     border: none;
     width: 24px;
     height: 24px;
 }
-.topic-month{
+
+.topic-month {
     font-weight: bold;
     font-size: 20px;
     color: #707070;
     margin-top: 28px;
     margin-left: 16px;
 }
-.back-salary{
-width: 70px;
-height: 24px;
-color: #7070709d;
-font-weight: bold;
-padding-left: 20px;
+
+.back-salary {
+    width: 70px;
+    height: 24px;
+    color: #7070709d;
+    font-weight: bold;
+    padding-left: 20px;
 
 }
-button.back-salary{
+
+button.back-salary {
     background-image: url(../images/icon-salary/back.png);
     background-repeat: no-repeat;
     border: none;
@@ -1234,6 +1260,7 @@ button.back-salary{
     margin-top: 25px;
     margin-left: 45px;
 }
+
 .box-headtablesalary {
     margin-left: 46px;
     margin-top: 48px;
@@ -1243,6 +1270,7 @@ button.back-salary{
     height: 84px;
     background-color: #FFFFFF;
 }
+
 .title-salary {
     margin-top: 20px;
     margin-left: 45px;
@@ -1250,6 +1278,7 @@ button.back-salary{
     color: #3B3E40;
     opacity: 0.8;
 }
+
 .title-employeesalary {
     font-family: 'RedHatDisplay';
     font-size: 20px;
@@ -1258,6 +1287,7 @@ button.back-salary{
     margin-top: 22px;
     margin-left: 16px;
 }
+
 table.table-salary {
     border-collapse: collapse;
     width: 90.4%;
@@ -1272,7 +1302,8 @@ td.list-detailsalary {
     padding: 15px;
     width: 10%;
 }
-th.list-monthsalary{
+
+th.list-monthsalary {
     text-align: right;
     width: 10%;
     border-bottom: 1px solid #70707048;
@@ -1283,10 +1314,12 @@ th.list-monthsalary {
     font-size: 12px;
     font-weight: bold;
 }
+
 td.list-detailsalary {
     text-align: right;
     
 }
+
 th.list-monthsalaryfirst {
     text-align: left;
     color: #707070;

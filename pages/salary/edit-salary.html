@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <title>Salary Management</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="../../resources/images/logo-home.svg" class="logo">
+        <div class="employee-management">Salary Management</div>
+        <a href="../index.html"><img src="../../resources/images/logout.png" class="logout"></a>
+    </div>
+    <div class="menu">
+        <div class="box-menu">
+            <div class="topic-menu">
+                <p> MENU</p>
+            </div>
+            <div class="section-menu">
+                <a href="" class="menu-detail">
+                    <div class="icon-menu3">
+                        <p class="text-menu">statics</p>
+                    </div>
+                </a>
+                <a href="employee-management.html" class="menu-detail">
+                    <div class="icon-menu1">
+                        <p class="text-menu">Employee </p>
+                    </div>
+                </a>
+                <a href="salary.html" class="menu-detail active">
+                    <div class="icon-menu5">
+                        <p class="text-menu">Salary</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="listofemployees">
+            <button class="back-salary">Back</button>
+
+            <div class="blog-statistics">
+                <div class="topic-edit-salary">
+                    <div class="topic-detail-employee">Employee</div>
+                    <div class="topic-detail-bank">Bank and Account No</div>
+                    <div class="topic-detail-net">Net paid</div>
+                </div>
+                <div class="detail-edit-salary">
+                    <div class="icon-name-salary">
+                        <img class="icon-p" src="../../resources/images/employee/user.png">
+                        <div class="salary-name-lastname"> Nisarat Suebsar
+                            <h5>ux/ui designer</h5>
+                        </div>
+                    </div>
+                    <div class="salary-bank">kasikorn bank
+                        <h5>ux/ui designer</h5>
+                    </div>
+                    <div class="salary-my">January 2019</div>
+                    <div class="salary-total">19,250.00</div>
+
+                </div>
+                <div class="option-detail-salary">
+                    <div class="salary-overtime-1">
+                        <div>
+                            <h4>Overtime</h4>
+                            <div class="topic-overtime">
+                                <div class="detail-overtime">Rate :</div>
+                                <div class="detail-overtime">Hours :</div>
+                                <div class="detail-overtime">Total (OT) :</div>
+                            </div>
+                            <div class="input-detail-overtime">
+                                <input class="input-salary-rate" type="text" placeholder="0.00">
+                                <input class="input-salary-rate" type="text" placeholder="0">
+                                <label class="input-salary-rate" for="">0.00</label>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Salary</h4>
+                            <h6>Salary :</h6>
+                            <label class="input-salary-month" for="">0.00</label>
+                            <div class="login-checkbox">
+                                <label class="checkbox-label">
+                                    <input type="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <div class="input-title-salary">Social Insurance :</div>
+                                </label>
+                            </div>
+                            <label class="input-salary-month" for="">0.00</label>
+                        </div>
+                    </div>
+                    <div class="salary-overtime">
+                        <h4>Other</h4>
+                        <table id="myTable">
+                            <tr>
+                                <td>
+                                    <select class="section-describe">
+                                        <option value="0">Increase</option>
+                                        <option value="1">Decrease</option>
+                                        <option value="1">Bonus</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Describe" class="section-describe">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="0.00" class="section-describe-1">
+                                </td>
+                                <td>
+                                    <button onclick="del_row()" class="del-icon"><img
+                                            src="../../resources/images/iconmenu/del.png" alt=""></button>
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="add-describe" onclick="add_row()">+ Add</button>
+                        <div>
+                            <textarea>note...</textarea>
+                        </div>
+                     
+                        <script>
+                            function add_row() {
+                                var table = document.getElementById("myTable");
+                                count_rows = table.getElementsByTagName("tr").length;
+                                var row = table.insertRow(count_rows);
+                                var cell1 = row.insertCell(0);
+                                var cell2 = row.insertCell(1);
+                                var cell3 = row.insertCell(2);
+                                var cell4 = row.insertCell(3);
+                                cell1.innerHTML = "<select value placeholder='Increase' class='section-describe''<option>Increase</option>'/>"
+                                    +
+                                    "'<option>Increase</option>''<option>Decrease</option>''<option>Bonus</option>'/>";
+                                
+                                cell2.innerHTML = "<input type='text' name='txtA'" + count_rows +
+                                    " value placeholder='Describe'class='section-describe' />";
+                                cell3.innerHTML = "<input type='text' name='txtB'" + count_rows +
+                                    " value placeholder='0.00' class='section-describe-1' />";
+                                cell4.innerHTML =
+                                    "<button onclick='del_row()'class='del-icon'><img src='../../resources/images/iconmenu/del.png'></button>";
+                            }
+
+                            function del_row() {
+                                var table = document.getElementById("myTable");
+                                count_rows = table.getElementsByTagName("tr").length;
+                                document.getElementById("myTable").deleteRow(count_rows - 1);
+                            }
+                        </script>
+
+                    </div>
+                   
+                </div>
+                <div class="button-other">
+                    <button class="other-cancel">Cancel</button>
+                    <button class="other-save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
