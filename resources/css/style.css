@@ -1435,7 +1435,7 @@ th.list-monthsalarynetpaid {
     margin-top: 33px;
     margin-left: 119px;
 }
-a.submitnewsalary {
+.submitnewsalary {
     text-decoration: none;
     font-family: 'RedHatDisplay';
     font-size: 12px;
