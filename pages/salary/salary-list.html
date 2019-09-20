@@ -59,7 +59,7 @@
                         <th class="list-salary-1">Payment Status</th>
                         <th class="list-salary"></th>
                     </tr>
-                   <tr class="topic-salary">
+                    <tr class="topic-salary">
                         <td class="list-salary">
                             <div class="icon-name">
                                 <img class="icon-pp" src="../../resources/images/employee/user.png">
@@ -180,32 +180,49 @@
         </div>
     </div>
     <div id="popup1" class="overlay">
-            <div class="popup">
-                <a class="close" href="#">&times;</a>
-                <div class="icondeletepopup"><img class="icon-deletepopup"
-                        src="../../resources/images/employee/confirm-delete.png"></div>
-                <div class="title-delete">Delete Confirmation</div>
-                <div class="content-delete">
-                    You are about to delete a record, Are You Sure?
-                </div>
-                <button class="btn-cancel"><a href="#" class="cancel">Cancel</button></a>
-                <button class="btn-delete"><a href="#" onclick="myFunction()" class="delete">Delete</button></a>
-            </div>
-        </div>
-    
-        <div id="snackbar">
-            <img class="icon-alert" src="../../resources/images/alert.svg">
-           <p class="deleted-completed"> Deleted Successfull </p>
+        <div class="popup">
             <a class="close" href="#">&times;</a>
+            <div class="icondeletepopup"><img class="icon-deletepopup"
+                    src="../../resources/images/employee/confirm-delete.png"></div>
+            <div class="title-delete">Delete Confirmation</div>
+            <div class="content-delete">
+                You are about to delete a record, Are You Sure?
+            </div>
+            <button class="btn-cancel"><a href="#" class="cancel">Cancel</button></a>
+            <button class="btn-delete"><a href="#" onclick="myFunctions()" class="delete">Delete</button></a>
         </div>
-        <script>
-            function myFunction() {
-              var x = document.getElementById("snackbar");
-              x.className = "show";
-              setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-            }
-        </script>
+    </div>
 
+<div id="snackbar">
+        <img class="icon-alert" src="../../resources/images/alert.svg">
+        <p class="deleted-completed"> Deleted Successfull </p>
+        <a class="close" href="#">&times;</a>
+    </div>
+    <script>
+        function myFunctions() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+
+
+<div id="snackbar">
+        <img class="icon-alert" src="../../resources/images/alert.svg">
+        <p class="deleted-completed"> Save Successfull </p>
+        <a class="close" href="#">&times;</a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
 </body>
 
 </html>
