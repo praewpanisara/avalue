@@ -74,7 +74,7 @@
                         <th class="list-monthsalarynetpaid">Net paid</th>
                     </tr>
                     <tr class="topic-salaryadd">
-                        <td class="list-detailsalary">
+                        <td class="list-detailsalary"><a href="salary-list.html" class="link-salary">
                             <div class="icon-namemonth">
                                 <img class="icon-folder" src="../../resources/images/icon-salary/foldersalary.svg">
                                 <div class="month-folder"> 
@@ -90,6 +90,7 @@
                         <td class="list-detailsalary">(4,500.00)</td>
                         <td class="list-detailnetpaid">96,250.00</td>
                         </td>
+                    </a>
                     </tr>
                 </table>
             </div>
@@ -132,15 +133,25 @@
                             </select>
                      </div>
                     </div>
-                <button class="btn-submitnewsalary">
-                    <a href="../salary/salary-list.html" onclick="myFunction()" class="submitnewsalary">
+                <button class="btn-submitnewsalary" onclick="myFunctionsave()">
+                    <a href="#" class="submitnewsalary">
                         Submit
                     </a>
                     </button>
             </div>
         </div>
-    
-        
+        <div id="snackbarsave">
+            <img class="icon-alert" src="../../resources/images/alert.svg">
+           <p class="deleted-completed"> Save Successfull </p>
+            <a class="close" href="#">&times;</a>
+        </div>
+        <script>
+            function myFunctionsave() {
+              var y = document.getElementById("snackbarsave");
+              y.className = "show2";
+              setTimeout(function(){ y.className = y.className.replace("show2", ""); }, 3000);
+            }
+        </script>
 </body>
 
 </html>

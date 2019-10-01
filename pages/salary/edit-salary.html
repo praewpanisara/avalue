@@ -117,7 +117,7 @@
                         <div>
                             <textarea>note...</textarea>
                         </div>
-                     
+
                         <script>
                             function add_row() {
                                 var table = document.getElementById("myTable");
@@ -127,10 +127,10 @@
                                 var cell2 = row.insertCell(1);
                                 var cell3 = row.insertCell(2);
                                 var cell4 = row.insertCell(3);
-                                cell1.innerHTML = "<select value placeholder='Increase' class='section-describe''<option>Increase</option>'/>"
-                                    +
+                                cell1.innerHTML =
+                                    "<select value placeholder='Increase' class='section-describe''<option>Increase</option>'/>" +
                                     "'<option>Increase</option>''<option>Decrease</option>''<option>Bonus</option>'/>";
-                                
+
                                 cell2.innerHTML = "<input type='text' name='txtA'" + count_rows +
                                     " value placeholder='Describe'class='section-describe' />";
                                 cell3.innerHTML = "<input type='text' name='txtB'" + count_rows +
@@ -147,16 +147,33 @@
                         </script>
 
                     </div>
-                   
+
                 </div>
                 <div class="button-other">
-                    <button class="other-cancel">Cancel</button>
-                    <button class="other-save" onclick="myFunction()">Save</button>
+                    <button class="other-cancel"><a href="../salary/edit-salary.html" class="cancel">Cancel</a></button>
+                    <button class="other-save"><a href="#popup-save" class="delete">Save</a></button>
                 </div>
             </div>
         </div>
     </div>
-
+    <div id="popup-save" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="icondeletepopup">
+                <img class="icon-deletepopup" src="../../resources/images/employee/save.svg">
+            </div>
+            <div class="title-save">
+                Succesfull</div>
+            <div class="content-delete">
+                Employee account has been successfully created!
+            </div>
+            <button class="btn-saveokay">
+                <a href="salary-list.html" class="delete">
+                    Okay
+                </a>
+            </button>
+        </div>
+    </div>
 </body>
 
 </html>

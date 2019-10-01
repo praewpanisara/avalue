@@ -153,33 +153,21 @@
                 You are about to delete a record, Are You Sure?
             </div>
             <button class="btn-cancel"><a href="#" class="cancel">Cancel</button></a>
-            <button class="btn-delete"><a href="#" onclick="myFunction()" class="delete">Delete</button></a>
+            <button class="btn-delete"><a href="#" class="delete" onclick="myFunction()">Delete</button></a>
         </div>
     </div>
-    <div id="snackbar">
-        <img class="icon-alert" src="../../resources/images/alert.svg">
-       <p class="deleted-completed"> Deleted Successfull </p>
-        <a class="close" href="#">&times;</a>
-    </div>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("snackbar");
-          x.className = "show";
-          setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-        }
-    </script>
+   
 
 <div id="snackbar">
     <img class="icon-alert" src="../../resources/images/alert.svg">
-   <p class="deleted-completed"> Save Successfull </p>
+   <p class="deleted-completed"> Delete Successfull </p>
     <a class="close" href="#">&times;</a>
 </div>
 <script>
     function myFunction() {
       var x = document.getElementById("snackbar");
       x.className = "show";
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);}
 </script>
 
 

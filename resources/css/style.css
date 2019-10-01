@@ -1190,6 +1190,31 @@ img.image-employee {
     opacity: 0.8;
     text-align: center;
 }
+.title-save {
+    font-size: 18px;
+    color: #707070;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 228px;
+    letter-spacing: 1px;
+}
+.btn-saveokay {
+    background-color: #34A853;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 80px;
+    height: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 43px;
+    margin-left: 231px;
+}
 
 /********************************** salary **********************************/
 
@@ -1336,13 +1361,13 @@ th.list-monthsalaryfirst {
     font-weight: bold;
     padding-top: 0;
     padding-left: 55px;
-    border-bottom: 1px solid #70707048;
+    border-bottom: 0.75px solid #70707048;
     width: 10%;
 }
 
 tr.topic-salaryadd {
     background-color: #f2f2f2;
-    border-bottom: 2px solid #70707048;
+    border-bottom: 0.75px solid #70707048;
 }
 
 td.list-detailnetpaid {
@@ -1361,7 +1386,7 @@ th.list-monthsalarynetpaid {
     padding-right: 58px;
     text-align: right;
     padding-top: 0;
-    border-bottom: 1px solid #70707048;
+    border-bottom: 0.75px solid #70707048;
 }
 .month-folder {
     margin-left: 25px;
@@ -1559,7 +1584,7 @@ margin-top: 5px;
     display: flex;
   }
   
-  #snackbarsave.show {
+  #snackbarsave.show2 {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -1823,4 +1848,8 @@ label.input-salary-month {
     width: 256px;
     height: 256px;
     margin: 60px auto;
+}
+.link-salary {
+    text-decoration: none;
+    color: #707070;
 }
