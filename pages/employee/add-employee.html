@@ -134,34 +134,9 @@
                         <td>
                             <input type="date" placeholder="" class="section-bd-employee"  value="2018-07-22">
                         </td>
-                        <td>
-                            <button onclick="del_row()" class="del-icon"></button>
-                        </td>
                     </tr>
                 </table>
                 <!-- </div> -->
-                <button class="add-salary" onclick="add_row()">+ Add Salary</button>
-                <script>
-                    function add_row() {
-                        var table = document.getElementById("myTable");
-                        count_rows = table.getElementsByTagName("tr").length;
-                        var row = table.insertRow(count_rows);
-                        var cell1 = row.insertCell(0);
-                        var cell2 = row.insertCell(1);
-                        var cell3 = row.insertCell(2);
-                        cell1.innerHTML = "<input type='text' name='txtA'" + count_rows +
-                            " value placeholder='eg.30,000' class='section-input-salary'/>";
-                        cell2.innerHTML = "<input type='date' name='txtB'" + count_rows +
-                            " value class='section-bd-employee' />";
-                        cell3.innerHTML = "<button onclick='del_row()'class='del-icon'><img src='../../resources/images/iconmenu/del.png'></button>";
-                    }
-
-                    function del_row() {
-                        var table = document.getElementById("myTable");
-                        count_rows = table.getElementsByTagName("tr").length;
-                        document.getElementById("myTable").deleteRow(count_rows - 1);
-                    }
-                </script>
                 <div class="line"></div>
                 <p class="topic-employee">Payment Information</p>
                 <div class="salary-employee">
