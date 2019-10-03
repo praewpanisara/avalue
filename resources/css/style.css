@@ -812,21 +812,16 @@ button.submit {
 }
 
 .section-addemployee {
-    display: grid;
-    width: 1165px;
-    margin: auto;
-    grid-gap: 68px;
-    grid-template-columns: 776px 320px;
     margin-top: 100px;
-    margin-bottom: 48px;
 
 }
 
 .detail-employee {
     background-color: #fff;
     width: 776px;
-    height: 100%;
+    height: auto;
     padding-bottom: 48px;
+    margin: auto;
 }
 
 .photo-employee {
@@ -837,12 +832,13 @@ button.submit {
 
 .detail-input-employee {
     width: 500px;
+    height: auto;
     margin: auto;
 }
 
 p.topic-employee {
     font-size: 18px;
-    margin-top: 59px;
+    padding-top: 59px;
     font-weight: bold;
     color: #707070;
 }
@@ -854,9 +850,9 @@ p.topic-contact {
     color: #707070;
 }
 
-.section-input-employee {
+/* .section-input-employee {
     padding-left: 22px;
-}
+} */
 
 input.section-input-employee[type=text] {
     width: 500px;
@@ -969,7 +965,6 @@ th.start-salary {
 
 .salary-employee {
     width: 212px;
-    float: left;
 
 }
 
@@ -1145,7 +1140,7 @@ label {
     border-radius: 50%;
 }
 
-.image-phofile:hover .image-hov {
+/* .image-phofile:hover .image-hov {
     width: 140px;
     height: 50%;
     position: absolute;
@@ -1157,14 +1152,15 @@ label {
     background-image: url(../images/camera.svg);
     background-repeat: no-repeat;
     background-position: 58px 20px;
-}
+} */
 
 img.image-employee {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 4px solid#fff;
     margin-top: 40px;
+    background-color: #9c9c9c;
 
 }
 
