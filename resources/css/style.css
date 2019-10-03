@@ -481,7 +481,7 @@ input.search[type=text] {
     color: #707070;
     font-weight: bold;
     margin-top: 22px;
-    margin-left: 10px;
+    margin-left: 24px;
 }
 
 table.table-employee {
@@ -567,6 +567,10 @@ tr.topic-salary:nth-child(even) {
 .icon-name {
     display: flex;
 }
+ 
+.list-namesurname {
+    margin-left: 24px;
+}
 
 .name-lastname {
     padding: 22px 0;
@@ -574,6 +578,7 @@ tr.topic-salary:nth-child(even) {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    margin-left: 24px;
 }
 
 td.click-1 {
