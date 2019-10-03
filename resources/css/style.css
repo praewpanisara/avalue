@@ -477,11 +477,11 @@ input.search[type=text] {
 
 .title-list {
     font-family: 'RedHatDisplay';
-    font-size: 20px;
+    font-size: 18px;
     color: #707070;
     font-weight: bold;
     margin-top: 22px;
-    margin-left: 16px;
+    margin-left: 10px;
 }
 
 table.table-employee {
@@ -558,7 +558,10 @@ tr.topic-salary:nth-child(even) {
 }
 
 .icon-pp {
-    padding: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100%;
 }
 
 .icon-name {
@@ -1311,7 +1314,7 @@ button.back-salary {
 
 .title-employeesalary {
     font-family: 'RedHatDisplay';
-    font-size: 20px;
+    font-size: 18px;
     color: #707070;
     font-weight: bold;
     margin-top: 22px;
@@ -1392,7 +1395,7 @@ th.list-monthsalarynetpaid {
 }
 .box-salarylast {
     width: 90%;
-    height: 250px;
+    height: 100px;
     background-color: #FFFFFF;
     margin-left: 46px;
     border: 0.75px solid #FFFFFF;
@@ -1658,7 +1661,6 @@ margin-top: 5px;
 
 .salary-bank {
     padding: 20px 0;
-    padding-right: 30px;
     width: 120px;
 
 }
@@ -1689,6 +1691,7 @@ img.icon-p {
 .salary-name-lastname {
     padding: 22px 0;
     width: 120px;
+    margin-left: 120px;
 }
 
 h5 {
