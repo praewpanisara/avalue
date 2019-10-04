@@ -1716,7 +1716,9 @@ h5 {
 
 }
 .salary-overtime-1 {
-    margin: 0 auto;
+    display: block;
+    margin: 0 120px 
+    
 }
 
 .topic-overtime {
