@@ -1696,7 +1696,10 @@ img.icon-p {
 .salary-name-lastname {
     padding: 22px 0;
     width: 120px;
-    margin-left: 100px;
+    margin-left: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h5 {
@@ -1750,11 +1753,12 @@ input.input-salary-rate {
 
 
 label.input-salary-rate {
-padding: 12px 10px 12px 64px;
+padding: 12px 10px ;
+width: 96px;
+text-align: right;
     background-color: #F2F2F2;
     margin-bottom: 0px;
     font-size: 14px;
- 
 }
 h4{
     color: #707070;
@@ -1762,7 +1766,9 @@ h4{
     margin-top: 30px;
 }
 label.input-salary-month {
-    padding: 12px 20px 12px 295px;
+    padding: 12px 20px ;
+    width: 280px;
+    text-align: right;
         background-color: #F2F2F2;
         margin-bottom: 0px;
     font-size: 14px;

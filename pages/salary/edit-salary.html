@@ -48,9 +48,9 @@
                     <div class="topic-detail-net">Net paid</div>
                 </div>
                 <div class="detail-edit-salary">
-                        <div class="salary-name-lastname"> Nisarat Suebsar
-                            <h5>ux/ui designer</h5>
-                        </div>
+                    <div class="salary-name-lastname"> jekfkdiffdgksgkj dgsjigisiguiguier
+                        <h5>ux/ui designer</h5>
+                    </div>
                     <div class="salary-bank">kasikorn bank
                         <h5>ux/ui designer</h5>
                     </div>
@@ -68,9 +68,13 @@
                                 <div class="detail-overtime">Total (OT) :</div>
                             </div>
                             <div class="input-detail-overtime">
-                                <input class="input-salary-rate" type="text" placeholder="0.00">
-                                <input class="input-salary-rate" type="text" placeholder="0">
-                                <label class="input-salary-rate" for="">0.00</label>
+                                <form class="input-detail-overtime" oninput="ot.value=parseInt(rate.value)*parseInt(hours.value);">
+                                    <input class="input-salary-rate" name="rate" type="text" placeholder="0.00">
+                                    <input class="input-salary-rate" name="hours" type="text" placeholder="0">
+                                    <label class="input-salary-rate">
+                                        <output class="input-salary-rate" name="ot" readonly>0.00</output>   
+                                    </label>
+                                </form>
                             </div>
                         </div>
                         <div>
@@ -147,7 +151,7 @@
 
                 </div>
                 <div class="button-other">
-                    <button class="other-cancel"><a href="../salary/edit-salary.html" class="cancel">Cancel</a></button>
+                    <button class="other-cancel"><a href="../salary/salary-list.html" class="cancel">Cancel</a></button>
                     <button class="other-save"><a href="#popup-save" class="delete">Save</a></button>
                 </div>
             </div>
