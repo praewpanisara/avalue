@@ -1628,7 +1628,7 @@ margin-top: 5px;
     font-weight: bold;
     color: #707070;
     margin-top: 16px;
-
+    margin-left: 15px;
 }
 
 .topic-detail-bank {
@@ -1636,7 +1636,7 @@ margin-top: 5px;
     font-weight: bold;
     color: #707070;
     margin-top: 16px;
-    margin-right: 220px;
+    margin-left: 35px;
 }
 
 .topic-detail-net {
@@ -1644,8 +1644,7 @@ margin-top: 5px;
     font-weight: bold;
     color: #707070;
     margin-top: 16px;
-
-
+    margin-left: 280px;
 }
 
 .detail-edit-salary {
