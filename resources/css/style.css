@@ -1338,12 +1338,12 @@ table.table-salary {
 th.list-monthsalary,
 td.list-detailsalary {
     padding: 15px;
-    width: 10%;
+    
 }
 
 th.list-monthsalary {
     text-align: right;
-    width: 10%;
+    
     border-bottom: 1px solid #70707048;
 }
 
@@ -1351,6 +1351,7 @@ th.list-monthsalary {
     color: #707070;
     font-size: 12px;
     font-weight: bold;
+    width: 15%;
 }
 
 td.list-detailsalary {
@@ -1366,7 +1367,7 @@ th.list-monthsalaryfirst {
     padding-top: 0;
     padding-left: 55px;
     border-bottom: 0.75px solid #70707048;
-    width: 10%;
+    
 }
 
 tr.topic-salaryadd {
@@ -1380,7 +1381,7 @@ td.list-detailnetpaid {
     font-weight: bold;
     text-align: center;
     padding-top: 0;
-    width: 10%;
+    width: 20%;
     padding-left: 55px;
 }
 th.list-monthsalarynetpaid {
