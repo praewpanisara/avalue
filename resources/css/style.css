@@ -217,6 +217,7 @@ a button.button-login {
     background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 226px auto 226px;
+    z-index: 10;
 }
 
 .header>img.logo {
@@ -391,16 +392,17 @@ p.text-menu {
 
 .listofemployees {
     display: block;
+    min-width: 962px;
+    height: auto;
+    margin: 30px 48px;
 }
 
 .box-head {
-    margin-left: 46px;
-    margin-top: 48px;
-    margin-right: 46px;
-    width: 90%;
+    width: 100%;
     border: 0.75px solid #FFFFFF;
     height: 84px;
     background-color: #FFFFFF;
+    margin-top: 30px;
 }
 
 input.search[type=text] {
@@ -467,12 +469,11 @@ input.search[type=text] {
 }
 
 .box-headtable {
-    width: 90%;
-    margin-left: 46px;
+    width: 100%;
     margin-top: 26px;
-    border: 0.75px solid #FFFFFF;
     height: 80px;
     background-color: #FFFFFF;
+    padding-top: 22px;
 }
 
 .title-list {
@@ -480,24 +481,21 @@ input.search[type=text] {
     font-size: 18px;
     color: #707070;
     font-weight: bold;
-    margin-top: 22px;
-    margin-left: 24px;
+    margin-left: 16px;
 }
 
 table.table-employee {
     border-collapse: collapse;
-    width: 90.4%;
+    width: 100%;
     background-color: #FFFFFF;
-    margin-left: 42px;
     color: #707070;
     font-family: 'RedHatDisplay';
 }
 
 table.table-salary {
     border-collapse: collapse;
-    width: 90.4%;
+    width: 100%;
     background-color: #FFFFFF;
-    margin-left: 42px;
     color: #707070;
     font-family: 'RedHatDisplay';
 }
@@ -554,7 +552,7 @@ tr.topic-salary:nth-child(even) {
 }
 
 .box-table {
-    margin-left: 4px;
+    width: 100%;
 }
 
 .icon-pp {
@@ -569,7 +567,7 @@ tr.topic-salary:nth-child(even) {
 }
  
 .list-namesurname {
-    margin-left: 24px;
+    margin-left: 15px;
 }
 
 .name-lastname {
@@ -578,7 +576,7 @@ tr.topic-salary:nth-child(even) {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    margin-left: 24px;
+    margin-left: 17px;
 }
 
 td.click-1 {
@@ -750,17 +748,15 @@ a.delete {
 
 
 .blog-statistics {
-    width: 90%;
+    min-width: 962px;
     height: auto;
     background-color: #FFFFFF;
-    margin: auto;
-    margin-top: 50px;
-
+    margin: 50px 48px;
 }
 
 .topic-statistics {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: auto auto;
 }
 
 
@@ -797,6 +793,8 @@ select {
     text-align: center;
     margin-top: 18px;
     font-size: 16px;
+    z-index: 5;
+    overflow: hidden;
 }
 
 .header-banner>a img.out {
@@ -804,6 +802,7 @@ select {
     height: 24px;
     margin-left: 22px;
     margin-top: 17px;
+    z-index: 10;
 }
 
 button.submit {
@@ -1289,24 +1288,35 @@ button.del-icon {
     padding-left: 20px;
 
 }
+.back-salarylist {
+    width: 70px;
+    height: 24px;
+    color: #7070709d;
+    font-weight: bold;
+    padding-left: 20px;
+}
 
 button.back-salary {
     background-image: url(../images/icon-salary/back.png);
     background-repeat: no-repeat;
     border: none;
     background-color: #EEEEEE;
-    margin-top: 25px;
     margin-left: 45px;
+}
+button.back-salarylist {
+    background-image: url(../images/icon-salary/back.png);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #EEEEEE;
 }
 
 .box-headtablesalary {
-    margin-left: 46px;
     margin-top: 48px;
     margin-right: 46px;
-    width: 90%;
-    border: 0.75px solid #FFFFFF;
+    width: 100%;
     height: 84px;
     background-color: #FFFFFF;
+    padding-top: 22px;
 }
 
 .title-salary {
@@ -1315,6 +1325,7 @@ button.back-salary {
     font-size: 16px;
     color: #3B3E40;
     opacity: 0.8;
+    
 }
 
 .title-employeesalary {
@@ -1322,15 +1333,13 @@ button.back-salary {
     font-size: 18px;
     color: #707070;
     font-weight: bold;
-    margin-top: 22px;
     margin-left: 16px;
 }
 
 table.table-salary {
     border-collapse: collapse;
-    width: 90.4%;
+    width: 100%;
     background-color: #FFFFFF;
-    margin-left: 42px;
     color: #707070;
     font-family: 'RedHatDisplay';
 }
@@ -1400,11 +1409,9 @@ th.list-monthsalarynetpaid {
     display: flex;
 }
 .box-salarylast {
-    width: 90%;
+    width: 100%;
     height: 100px;
     background-color: #FFFFFF;
-    margin-left: 46px;
-    border: 0.75px solid #FFFFFF;
 }
 
 .overlay-newsalary {
@@ -1544,8 +1551,8 @@ margin-top: 5px;
     padding: 16px;
     position: fixed;
     z-index: 1;
+    right: 2%;
     top: 110px;
-    margin-left: 1017px;
     font-size: 18px;
     display: flex;
   }
@@ -1614,14 +1621,21 @@ margin-top: 5px;
 }
 
 
+
 /********************* box-salary-edit *****************/
+.blog-editsalary {
+    min-width: 962px;
+    height: auto;
+    background-color: #FFFFFF;
+    margin: 30px 48px;
+}
 .topic-edit-salary {
     width: 100%;
     height: 48px;
     background-color: #F5F5F5;
-    justify-content: space-around;
-    display: flex;
-
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  
 }
 
 .topic-detail-employee {
@@ -1629,7 +1643,7 @@ margin-top: 5px;
     font-weight: bold;
     color: #707070;
     margin-top: 16px;
-    margin-left: 15px;
+    margin-left: 120px;
 }
 
 .topic-detail-bank {
@@ -1637,7 +1651,7 @@ margin-top: 5px;
     font-weight: bold;
     color: #707070;
     margin-top: 16px;
-    margin-left: 35px;
+    margin-left: 100px;
 }
 
 .topic-detail-net {
@@ -1645,15 +1659,16 @@ margin-top: 5px;
     font-weight: bold;
     color: #707070;
     margin-top: 16px;
-    margin-left: 280px;
+    text-align: right;
+    margin-right: 130px;
 }
 
 .detail-edit-salary {
-    display: flex;
-    justify-content: space-between;
+    
     width: 100%;
     color: #707070;
-
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 
 }
 
@@ -1666,24 +1681,23 @@ margin-top: 5px;
 
 .salary-bank {
     padding: 20px 0;
-    width: 120px;
-
+    margin-left: 100px;
 }
 
 .salary-my {
-    display: flex;
+   
     padding: 20px 0;
-
+    margin-left: 100px;
 }
 
 .salary-total {
-    display: flex;
     padding: 20px 0;
-    margin-right: 100px;
+    
     font-size: 18px;
     color: #4285F4;
     font-weight: bold;
-
+    text-align: right;
+    margin-right: 130px;
 }
 
 img.icon-p {
@@ -1710,18 +1724,17 @@ h5 {
 
 .option-detail-salary {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: auto auto;
+    padding: 0 40px ;
 }
 
 .salary-overtime {
-    padding:0 60px;
-    border-left: 1px solid #70707038;
-
+    /* width: 100%; */
+    min-width: 320px;
+    padding: 0 76px;
 }
-.salary-overtime-1 {
-    display: block;
-    margin: 0 120px 
-    
+.salary-overtime.other {
+    border-left: 1px solid #70707038;
 }
 
 .topic-overtime {
@@ -1808,7 +1821,7 @@ label.input-salary-month {
         margin-top: 16px;
     }
     textarea {
-        width: 345px;
+        width: 80%;
         height: 150px;
         padding: 12px 20px;
         box-sizing: border-box;
@@ -1818,7 +1831,7 @@ label.input-salary-month {
         font-size: 14px;
         opacity: 0.5;
         margin-top: 16px;
-        
+        resize: none;
       }
       .button-other{
           text-align: right;
